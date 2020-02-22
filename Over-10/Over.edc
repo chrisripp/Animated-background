@@ -1,0 +1,180 @@
+// Title:   Over Watch
+// Author:  Chrisripp Pclinux User 
+// Over- loop animation, ffmpeg -i your.mov yourfile%02d.png
+
+
+#define FRAME LOSSY 60
+images {
+   
+//   image: "background.png" FRAME;
+
+image: "Over-1.png" COMP; 
+image: "Over-2.png" COMP;
+image: "Over-3.png" COMP;
+image: "Over-4.png" COMP;
+image: "Over-5.png" COMP;
+image: "Over-6.png" COMP;
+image: "Over-7.png" COMP;
+image: "Over-8.png" COMP;
+image: "Over-9.png" COMP;
+image: "Over-10.png" COMP;
+image: "Over-11.png" COMP;
+image: "Over-12.png" COMP;
+image: "Over-13.png" COMP;
+image: "Over-14.png" COMP;
+image: "Over-15.png" COMP;
+image: "Over-16.png" COMP;
+image: "Over-17.png" COMP;
+image: "Over-18.png" COMP;
+image: "Over-19.png" COMP;
+image: "Over-20.png" COMP;
+image: "Over-21.png" COMP;
+image: "Over-22.png" COMP;
+image: "Over-23.png" COMP;
+image: "Over-24.png" COMP;
+image: "Over-25.png" COMP;
+image: "Over-26.png" COMP;
+image: "Over-27.png" COMP;
+image: "Over-28.png" COMP;
+image: "Over-29.png" COMP;
+image: "Over-30.png" COMP;
+image: "Over-31.png" COMP;
+image: "Over-32.png" COMP;
+image: "Over-33.png" COMP;
+image: "Over-34.png" COMP;
+image: "Over-35.png" COMP;
+image: "Over-36.png" COMP;
+image: "Over-37.png" COMP;
+image: "Over-38.png" COMP;
+image: "Over-39.png" COMP;
+image: "Over-40.png" COMP;
+image: "Over-41.png" COMP;
+image: "Over-42.png" COMP;
+image: "Over-43.png" COMP;
+image: "Over-44.png" COMP;
+image: "Over-45.png" COMP;
+image: "Over-46.png" COMP;
+image: "Over-47.png" COMP;
+image: "Over-48.png" COMP;
+image: "Over-49.png" COMP;
+image: "Over-50.png" COMP;
+
+      
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	        relative: 0.00 0.00;
+	        offset: 0 0;
+	        }
+	       rel2 {
+			relative: 1.00 1.00;
+			offset: -1 -1;
+		    }	
+	   		image {
+				normal: "Over-1.png";
+		          }		
+	   	       }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+        }
+		rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+		
+	    image {
+normal: "Over-1.png";
+tween, "Over-2.png";
+tween, "Over-3.png";
+tween, "Over-4.png";
+tween, "Over-5.png";
+tween, "Over-6.png";
+tween, "Over-7.png";
+tween, "Over-8.png";
+tween, "Over-9.png";
+tween, "Over-10.png";
+tween, "Over-11.png";
+tween, "Over-12.png";
+tween, "Over-13.png";
+tween, "Over-14.png";
+tween, "Over-15.png";
+tween, "Over-16.png";
+tween, "Over-17.png";
+tween, "Over-18.png";
+tween, "Over-19.png";
+tween, "Over-20.png";
+tween, "Over-21.png";
+tween, "Over-22.png";
+tween, "Over-23.png";
+tween, "Over-24.png";
+tween, "Over-25.png";
+tween, "Over-26.png";
+tween, "Over-27.png";
+tween, "Over-28.png";
+tween, "Over-29.png";
+tween, "Over-30.png";
+tween, "Over-31.png";
+tween, "Over-32.png";
+tween, "Over-33.png";
+tween, "Over-34.png";
+tween, "Over-35.png";
+tween, "Over-36.png";
+tween, "Over-37.png";
+tween, "Over-38.png";
+tween, "Over-39.png";
+tween, "Over-40.png";
+tween, "Over-41.png";
+tween, "Over-42.png";
+tween, "Over-43.png";
+tween, "Over-44.png";
+tween, "Over-45.png";
+tween, "Over-46.png";
+tween, "Over-47.png";
+tween, "Over-48.png";
+tween, "Over-49.png";
+tween, "Over-50.png";
+
+	
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 10.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
