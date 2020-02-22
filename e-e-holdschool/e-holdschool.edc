@@ -1,0 +1,143 @@
+// Title:   E-Holdschool
+// Author:  Chrisripp <hybryde.org>
+
+#define FRAME LOSSY 80 // on définie le taux de compression des images
+
+// On place les images de notre fond animé
+images {
+   image: "logo.png" COMP;
+   image: "logo.png" COMP;
+image: "background.png" COMP;
+image: "skull00.png" COMP;
+image: "skull01.png" COMP;
+image: "skull02.png" COMP;
+image: "skull03.png" COMP;
+image: "skull04.png" COMP;
+image: "skull05.png" COMP;
+image: "skull06.png" COMP;
+image: "skull07.png" COMP;
+image: "skull08.png" COMP;
+image: "skull09.png" COMP;
+image: "e19.png" COMP;   
+image: "pclinuxosremaster.png" COMP;   
+   }
+// On place le fond d'écran
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	       relative: 0.00 0.00;
+	       offset: 0 0;
+	       }
+	   
+	   
+	        rel2 {
+
+			relative: 1.00 1.00;
+			offset: -1 -1;
+
+		    }	
+
+	   		image {
+
+				normal: "background.png";
+		              }		
+	   	    }
+           }
+	
+part { name: "e19";
+         type: IMAGE;
+           description {
+	    state: "default" 0.00;
+	     min: 374 168;
+	    max: 374 168;  
+	       rel1 {
+	       relative: 0.32 0.22;
+	       offset: 0 -50 ;
+	       }
+	        rel2 {
+			relative: 0.71 0.38;
+			offset: 0 -50;
+		    }	
+	   		image {
+				normal: "e19.png";
+		              }		
+	   	    }
+            }
+  part { name: "JQIiDPGJ";
+         type: IMAGE;
+         scale: 1;
+         mouse_events: 1;
+         description { state: "default" 0.0;
+            align: 0.5 0.5;
+            fixed: 0 0;
+            min: 0 0;
+            visible: 1;
+            image.normal: "pclinuxosremaster.png";
+            //aspect: 1 1;
+            rel1.relative: 0.10 0.57;
+            rel2.relative: 0.93 0.69;
+         }
+      }          	
+ part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 75 162;
+	    max: 75 162;
+            align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+                      }
+		
+	    rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+	
+	       image {
+normal: "skull00.png";
+tween: "skull00.png";
+tween: "skull01.png";
+tween: "skull02.png";
+tween: "skull03.png";
+tween: "skull04.png";
+tween: "skull05.png";
+tween: "skull06.png";
+tween: "skull07.png";
+tween: "skull08.png";
+tween: "skull09.png";
+  
+	       }
+	    }
+	}
+     }
+
+programs {
+			program {
+				name: "vitesse-anim";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 02.0;
+				target: "anim";
+				after: "vitesse-anim";
+			}
+		}
+	}
+}
+
+
+

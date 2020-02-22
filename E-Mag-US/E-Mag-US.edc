@@ -1,0 +1,528 @@
+images{
+   image: "0000.png" COMP;
+   image: "0001.png" COMP;
+   image: "0002.png" COMP;
+   image: "0003.png" COMP;
+   image: "0004.png" COMP;
+   image: "0005.png" COMP;
+   image: "0006.png" COMP;
+   image: "0007.png" COMP;
+   image: "0008.png" COMP;
+   image: "0009.png" COMP;
+   image: "0010.png" COMP;
+   image: "0011.png" COMP;
+   image: "0012.png" COMP;
+   image: "0013.png" COMP;
+   image: "0014.png" COMP;
+   image: "0015.png" COMP;
+   image: "0016.png" COMP;
+   image: "0017.png" COMP;
+   image: "0018.png" COMP;
+   image: "0019.png" COMP;
+   image: "0020.png" COMP;
+   image: "0021.png" COMP;
+   image: "0022.png" COMP;
+   image: "0023.png" COMP;
+   image: "0024.png" COMP;
+   image: "0025.png" COMP;
+   image: "0026.png" COMP;
+   image: "0027.png" COMP;
+   image: "0028.png" COMP;
+   image: "0029.png" COMP;
+   image: "0030.png" COMP;
+   image: "0031.png" COMP;
+   image: "0032.png" COMP;
+   image: "0033.png" COMP;
+   image: "0034.png" COMP;
+   image: "0035.png" COMP;
+   image: "0036.png" COMP;
+   image: "0037.png" COMP;
+   image: "0038.png" COMP;
+   image: "0039.png" COMP;
+   image: "0040.png" COMP;
+   image: "0041.png" COMP;
+   image: "0042.png" COMP;
+   image: "0043.png" COMP;
+   image: "0044.png" COMP;
+   image: "0045.png" COMP;
+   image: "0046.png" COMP;
+   image: "0060.png" COMP;
+   image: "bg.png" COMP;
+   image: "knobbg.png" COMP;
+}
+collections{
+   group{
+      name: "e/desktop/background";
+      min: 640 480;
+
+      script{ 
+         public knob_pos;
+         public knob_ref;
+         public knob_last;
+         public knob_move;
+         public signal_from_dragger;
+
+
+         public update_knob_state(Float:frac){
+
+            new px, py, pw, ph;
+            get_geometry(PART:"knob", px, py, pw, ph);
+            new Float:step = ph/60;
+            if(frac > ph)     { set_state(PART:"knob", "60", 0.0); return;} 
+            if(frac <= 0)     { set_state(PART:"knob", "default", 0.0); return;}
+            if(frac < step)   { set_state(PART:"knob", "1", 0.0); return;}
+            if(frac < 2*step) { set_state(PART:"knob", "2", 0.0); return;}
+            if(frac < 3*step) { set_state(PART:"knob", "3", 0.0); return;}
+            if(frac < 4*step) { set_state(PART:"knob", "4", 0.0); return;}
+            if(frac < 5*step) { set_state(PART:"knob", "5", 0.0); return;}
+            if(frac < 6*step) { set_state(PART:"knob", "6", 0.0); return;}
+            if(frac < 7*step) { set_state(PART:"knob", "7", 0.0); return;}
+            if(frac < 8*step) { set_state(PART:"knob", "8", 0.0); return;}
+            if(frac < 9*step) { set_state(PART:"knob", "9", 0.0); return;}
+            if(frac < 10*step) { set_state(PART:"knob", "10", 0.0); return;}
+            if(frac < 11*step) { set_state(PART:"knob", "11", 0.0); return;}
+            if(frac < 12*step) { set_state(PART:"knob", "12", 0.0); return;}
+            if(frac < 13*step) { set_state(PART:"knob", "13", 0.0); return;}
+            if(frac < 14*step) { set_state(PART:"knob", "14", 0.0); return;}
+            if(frac < 15*step) { set_state(PART:"knob", "15", 0.0); return;}
+            if(frac < 16*step) { set_state(PART:"knob", "16", 0.0); return;}
+            if(frac < 17*step) { set_state(PART:"knob", "17", 0.0); return;}
+            if(frac < 18*step) { set_state(PART:"knob", "18", 0.0); return;}
+            if(frac < 19*step) { set_state(PART:"knob", "19", 0.0); return;}
+            if(frac < 20*step) { set_state(PART:"knob", "20", 0.0); return;}
+            if(frac < 21*step) { set_state(PART:"knob", "21", 0.0); return;}
+            if(frac < 22*step) { set_state(PART:"knob", "22", 0.0); return;}
+            if(frac < 23*step) { set_state(PART:"knob", "23", 0.0); return;}
+            if(frac < 24*step) { set_state(PART:"knob", "24", 0.0); return;}
+            if(frac < 25*step) { set_state(PART:"knob", "25", 0.0); return;}
+            if(frac < 26*step) { set_state(PART:"knob", "26", 0.0); return;}
+            if(frac < 27*step) { set_state(PART:"knob", "27", 0.0); return;}
+            if(frac < 28*step) { set_state(PART:"knob", "28", 0.0); return;}
+            if(frac < 29*step) { set_state(PART:"knob", "29", 0.0); return;}
+            if(frac < 30*step) { set_state(PART:"knob", "30", 0.0); return;}
+            if(frac < 31*step) { set_state(PART:"knob", "30", 0.0); return;}
+            if(frac < 32*step) { set_state(PART:"knob", "32", 0.0); return;}
+            if(frac < 33*step) { set_state(PART:"knob", "33", 0.0); return;}
+            if(frac < 34*step) { set_state(PART:"knob", "34", 0.0); return;}
+            if(frac < 35*step) { set_state(PART:"knob", "35", 0.0); return;}
+            if(frac < 36*step) { set_state(PART:"knob", "36", 0.0); return;}
+            if(frac < 37*step) { set_state(PART:"knob", "37", 0.0); return;}
+            if(frac < 38*step) { set_state(PART:"knob", "38", 0.0); return;}
+            if(frac < 39*step) { set_state(PART:"knob", "39", 0.0); return;}
+            if(frac < 40*step) { set_state(PART:"knob", "40", 0.0); return;}
+            if(frac < 41*step) { set_state(PART:"knob", "41", 0.0); return;}
+            if(frac < 42*step) { set_state(PART:"knob", "42", 0.0); return;}
+            if(frac < 43*step) { set_state(PART:"knob", "43", 0.0); return;}
+            if(frac < 44*step) { set_state(PART:"knob", "44", 0.0); return;}
+            if(frac < 45*step) { set_state(PART:"knob", "45", 0.0); return;}
+            if(frac < 46*step) { set_state(PART:"knob", "46", 0.0); return;}
+            
+                                //Similar "if" statments for frac < 3*step to 59*step.
+
+            if(frac < 60*step) { set_state(PART:"knob", "60", 0.0); return;}
+
+         }
+
+         public reset_dragger(){
+            set_drag(PART:"dragger", 0.0, 0.0);
+            set_int(signal_from_dragger, 0);
+         }
+      }
+
+      parts{
+         part{
+            name: "knobbase";
+            scale: 1;
+            description{
+               state: "default" 0.0;
+               min: 640 480;
+               max: 1920 1200;
+               image.normal: "bg.png";
+            }
+         }
+         part{
+            name: "knob";
+            mouse_events: 0;
+            scale: 1;
+            description{
+               state: "default" 0.0;
+               max:1048 981;
+            //   rel.to: "knobbase";
+               rel1 {
+                  to: "knobbase"; 
+                  relative: 0.4  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "knobbase";
+                  relative: 1.0  1.0;
+                  offset:   0    0;
+               }
+               image.normal: "0000.png";
+            }
+            description{ 
+               state: "1" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0001.png";
+            }
+            description{ 
+               state: "2" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0002.png";
+            }
+            description{ 
+               state: "3" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0003.png";
+            }
+            description{ 
+               state: "4" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0004.png";
+            }
+            description{ 
+               state: "5" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0005.png";
+            }
+            description{ 
+               state: "6" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0006.png";
+            }
+           description{
+               state: "7" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0007.png";
+            }
+           description{ 
+               state: "8" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0008.png";
+            }
+          description{ 
+               state: "9" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0009.png";
+            }
+          description{ 
+               state: "10" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0010.png";
+            } 
+          description{ 
+               state: "11" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0011.png";
+            }
+            description{ 
+               state: "12" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0012.png";
+            }
+            description{ 
+               state: "13" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0013.png";
+            }
+            description{ 
+               state: "14" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0014.png";
+            }
+            description{ 
+               state: "15" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0015.png";
+            }
+            description{ 
+               state: "16" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0016.png";
+            }
+           description{
+               state: "17" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0017.png";
+            }
+           description{ 
+               state: "18" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0018.png";
+            }
+          description{ 
+               state: "19" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0019.png";
+            }
+          description{ 
+               state: "20" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0020.png";
+            }
+          description{ 
+               state: "21" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0021.png";
+            }
+            description{ 
+               state: "22" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0022.png";
+            }
+            description{ 
+               state: "23" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0023.png";
+            }
+            description{ 
+               state: "24" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0024.png";
+            }
+            description{ 
+               state: "25" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0025.png";
+            }
+            description{ 
+               state: "26" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0026.png";
+            }
+           description{
+               state: "27" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0027.png";
+            }
+           description{ 
+               state: "28" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0028.png";
+            }
+          description{ 
+               state: "29" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0029.png";
+            }
+          description{ 
+               state: "30" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0030.png";
+            }       
+          description{ 
+               state: "31" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0031.png";
+            }
+            description{ 
+               state: "32" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0032.png";
+            }
+            description{ 
+               state: "33" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0033.png";
+            }
+            description{ 
+               state: "34" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0034.png";
+            }
+            description{ 
+               state: "35" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0035.png";
+            }
+            description{ 
+               state: "36" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0036.png";
+            }
+           description{
+               state: "37" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0037.png";
+            }
+           description{ 
+               state: "38" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0038.png";
+            }
+          description{ 
+               state: "39" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0039.png";
+            }
+          description{ 
+               state: "40" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0040.png";
+            }  
+         description{ 
+               state: "41" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0041.png";
+            }
+            description{ 
+               state: "42" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0042.png";
+            }
+            description{ 
+               state: "4" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0043.png";
+            }
+            description{ 
+               state: "44" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0044.png";
+            }
+            description{ 
+               state: "45" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0045.png";
+            }
+            description{ 
+               state: "46" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0046.png";
+            }
+           
+                                //Descriptions for states "3" to "59" similar.
+
+            description { 
+               state: "60" 0.0;
+               inherit: "default" 0.0;
+               image.normal: "0060.png";
+            }
+         }
+
+         part{
+				//The real slider for elm_slider
+            name: "elm.dragable.slider";
+            scale: 1;
+            dragable.x: 1 1 0;
+            dragable.y: 1 1 0;
+            type: RECT;
+            description{
+               state: "default" 0.0;
+               visible: 0;
+            }
+            dragable{
+               x: 1 1 0;
+               y: 1 1 0;
+            }
+         }
+
+         part{ 
+            name: "dragger";
+            type: RECT;
+            description{
+               state: "default" 0.0;
+               rel1.to: "knob";
+               rel2.to: "knob";
+               color: 0 0 0 0;
+            }
+            description{
+               state: "hoki" 0.0;
+               rel1.to: "knob";
+               rel2.to: "knob";
+               color: 0 0 0 0;
+            }
+            dragable{
+               x: 0 0 0;
+               y: 1 1 0;
+            }
+         }
+
+
+      }        
+////////////////////////////////////////////////////////////////////         
+      programs{
+         program{
+            name: "on_drag_move";
+            signal: "drag";
+            source: "dragger";
+            script{
+               new Float:p1;
+               new Float:p2;
+
+                                        //The drag value is subtracted from the last knob position
+                                        //because a drag upwards yields negative values.
+
+               get_drag(PART:"dragger", p1, p2);
+               set_float(knob_pos, get_float(knob_last) - p2);
+
+               new px, py, pw, ph;
+               get_geometry(PART:"knob", px, py, pw, ph);
+               if(get_float(knob_pos) > ph) set_float(knob_pos, ph);
+               if(get_float(knob_pos) < 0) set_float(knob_pos, 0);
+
+               update_knob_state(get_float(knob_pos));
+               new Float:sl_val = get_float(knob_pos)/ph;
+
+               set_int(signal_from_dragger, 1);
+               set_drag(PART:"elm.dragable.slider", sl_val , sl_val);
+            }
+         }
+
+         program{
+            name: "on_drag_stop";
+            signal: "drag,stop";
+            source: "dragger";
+            script{
+               set_float(knob_last, get_float(knob_pos)); 
+               reset_dragger();
+            }
+         }
+         program{
+            name: "on_wheel";
+            signal: "mouse,wheel*";
+            source: "dragger";
+				//after: "on_slider_set";
+         }
+         program{
+            signal: "elm,state,enabled"; 
+            source: "elm";
+            script {
+               set_int(signal_from_dragger, 0);
+            }
+         }
+
+         program{
+            signal: "drag,set";
+            source: "elm.dragable.slider";
+            script 
+            {
+               if(get_int(signal_from_dragger) == 0)
+               {
+                  new Float:p1;
+                  new Float:p2;
+                  get_drag(PART:"elm.dragable.slider", p1, p2);
+
+                  new px, py, pw, ph;
+                  get_geometry(PART:"knob", px, py, pw, ph);
+                  set_float(knob_pos, ph*p1);
+
+                  if(get_float(knob_pos) > ph) set_float(knob_pos, ph);
+                  if(get_float(knob_pos) < 0) set_float(knob_pos, 0);
+
+                  set_float(knob_last, get_float(knob_pos)); 
+
+                  update_knob_state(get_float(knob_pos));
+
+                  new Float:sl_val = get_float(knob_pos)/ph;
+                  set_drag(PART:"elm.dragable.slider", sl_val , sl_val);
+               }
+               else
+               {
+                  set_int(signal_from_dragger, 0);
+               }
+            }
+         }
+      }
+   }
+}
