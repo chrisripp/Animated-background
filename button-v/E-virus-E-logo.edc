@@ -1,0 +1,399 @@
+// Title:   E-virus
+// Author:  Chrisripp <hybryde.org>
+
+#define FRAME LOSSY 40
+images {
+   /* TODO: Please replace embedded image files to your application image files. */
+   image: "ENVENTOR_EMBEDDED_LOGO.png" COMP;
+   
+//   image: "background.png" FRAME;
+ 
+
+image: "E1_0000.png" COMP;
+image: "E1_0001.png" COMP;
+image: "E1_0002.png" COMP;
+image: "E1_0003.png" COMP;
+image: "E1_0004.png" COMP;
+image: "E1_0005.png" COMP;
+image: "E1_0006.png" COMP;
+image: "E1_0007.png" COMP;
+image: "E1_0008.png" COMP;
+image: "E1_0009.png" COMP;
+image: "E1_0010.png" COMP;
+image: "E1_0011.png" COMP;
+image: "E1_0012.png" COMP;
+image: "E1_0013.png" COMP;
+image: "E1_0014.png" COMP;
+image: "E1_0015.png" COMP;
+image: "E1_0016.png" COMP;
+image: "E1_0017.png" COMP;
+image: "E1_0018.png" COMP;
+image: "E1_0019.png" COMP;
+image: "E1_0020.png" COMP;
+image: "E1_0021.png" COMP;
+image: "E1_0022.png" COMP;
+image: "E1_0023.png" COMP;
+image: "E1_0024.png" COMP;
+image: "E1_0025.png" COMP;
+image: "E1_0026.png" COMP;
+image: "E1_0027.png" COMP;
+image: "E1_0028.png" COMP;
+image: "E1_0029.png" COMP;
+image: "E1_0030.png" COMP;
+image: "E1_0031.png" COMP;
+image: "E1_0032.png" COMP;
+image: "E1_0033.png" COMP;
+image: "E1_0034.png" COMP;
+image: "E1_0035.png" COMP;
+image: "E1_0036.png" COMP;
+image: "E1_0037.png" COMP;
+image: "E1_0038.png" COMP;
+image: "E1_0039.png" COMP;
+image: "E1_0040.png" COMP;
+image: "E1_0041.png" COMP;
+image: "E1_0042.png" COMP;
+image: "E1_0043.png" COMP;
+image: "E1_0044.png" COMP;
+image: "E1_0045.png" COMP;
+image: "E1_0046.png" COMP;
+image: "E1_0047.png" COMP;
+image: "E1_0048.png" COMP;
+image: "E1_0049.png" COMP;
+image: "E1_0050.png" COMP;
+image: "E1_0051.png" COMP;
+image: "E1_0052.png" COMP;
+image: "E1_0053.png" COMP;
+image: "E1_0054.png" COMP;
+image: "E1_0055.png" COMP;
+image: "E1_0056.png" COMP;
+image: "E1_0057.png" COMP;
+image: "E1_0058.png" COMP;
+image: "E1_0059.png" COMP;
+image: "E1_0060.png" COMP;
+image: "E1_0061.png" COMP;
+image: "E1_0062.png" COMP;
+image: "E1_0063.png" COMP;
+image: "E1_0064.png" COMP;
+image: "E1_0065.png" COMP;
+image: "E1_0066.png" COMP;
+image: "E1_0067.png" COMP;
+image: "E1_0068.png" COMP;
+image: "E1_0069.png" COMP;
+image: "E1_0070.png" COMP;
+image: "E1_0071.png" COMP;
+image: "E1_0072.png" COMP;
+image: "E1_0073.png" COMP;
+image: "E1_0074.png" COMP;
+image: "E1_0075.png" COMP;
+image: "E1_0076.png" COMP;
+image: "E1_0077.png" COMP;
+image: "E1_0078.png" COMP;
+image: "E1_0079.png" COMP;
+image: "E1_0080.png" COMP;
+image: "E1_0081.png" COMP;
+image: "E1_0082.png" COMP;
+image: "E1_0083.png" COMP;
+image: "E1_0084.png" COMP;
+image: "E1_0085.png" COMP;
+image: "E1_0086.png" COMP;
+image: "E1_0087.png" COMP;
+image: "E1_0088.png" COMP;
+image: "E1_0089.png" COMP;
+image: "E1_0090.png" COMP;
+image: "E1_0100.png" COMP;
+image: "E1_0101.png" COMP;
+image: "E1_0102.png" COMP;
+image: "E1_0103.png" COMP;
+image: "E1_0104.png" COMP;
+image: "E1_0105.png" COMP;
+image: "E1_0106.png" COMP;
+image: "E1_0107.png" COMP;
+image: "E1_0108.png" COMP;
+image: "E1_0109.png" COMP;
+image: "E1_0110.png" COMP;
+image: "E1_0111.png" COMP;
+image: "E1_0112.png" COMP;
+image: "E1_0113.png" COMP;
+image: "E1_0114.png" COMP;
+image: "E1_0115.png" COMP;
+image: "E1_0116.png" COMP;
+image: "E1_0117.png" COMP;
+image: "E1_0118.png" COMP;
+image: "E1_0119.png" COMP;
+image: "E1_0120.png" COMP;
+image: "E1_0121.png" COMP;
+image: "E1_0122.png" COMP;
+image: "E1_0123.png" COMP;
+image: "E1_0124.png" COMP;
+image: "E1_0125.png" COMP;
+image: "E1_0126.png" COMP;
+image: "E1_0127.png" COMP;
+image: "E1_0128.png" COMP;
+image: "E1_0129.png" COMP;
+image: "E1_0130.png" COMP;
+image: "E1_0131.png" COMP;
+image: "E1_0132.png" COMP;
+image: "E1_0133.png" COMP;
+image: "E1_0134.png" COMP;
+image: "E1_0135.png" COMP;
+image: "E1_0136.png" COMP;
+image: "E1_0137.png" COMP;
+image: "E1_0138.png" COMP;
+image: "E1_0139.png" COMP;
+image: "E1_0140.png" COMP;
+image: "E1_0141.png" COMP;
+image: "E1_0142.png" COMP;
+image: "E1_0143.png" COMP;
+image: "E1_0144.png" COMP;
+image: "E1_0145.png" COMP;
+image: "E1_0146.png" COMP;
+image: "E1_0147.png" COMP;
+image: "E1_0148.png" COMP;
+image: "E1_0149.png" COMP;
+image: "E1_0150.png" COMP;
+image: "skullE.png" COMP;  
+image: "button.png" COMP;
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	       relative: 0.00 0.00;
+	       offset: 0 0;
+	       }
+	   
+	   
+	        rel2 {
+
+			relative: 1.00 1.00;
+			offset: -1 -1;
+
+		    }	
+
+	   		image {
+
+				normal: "skullE.png";
+		              }		
+	   	    }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 542 552;
+	    max: 542 552;
+         align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 50 -200;
+                      }
+		
+	    rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 50 -200;
+		}
+	
+	       image {
+normal: "E1_0000.png";
+tween: "E1_0001.png";
+tween: "E1_0002.png";
+tween: "E1_0003.png";
+tween: "E1_0004.png";
+tween: "E1_0005.png";
+tween: "E1_0006.png";
+tween: "E1_0007.png";
+tween: "E1_0008.png";
+tween: "E1_0009.png";
+tween: "E1_0010.png";
+tween: "E1_0011.png";
+tween: "E1_0012.png";
+tween: "E1_0013.png";
+tween: "E1_0014.png";
+tween: "E1_0015.png";
+tween: "E1_0016.png";
+tween: "E1_0017.png";
+tween: "E1_0018.png";
+tween: "E1_0019.png";
+tween: "E1_0020.png";
+tween: "E1_0021.png";
+tween: "E1_0022.png";
+tween: "E1_0023.png";
+tween: "E1_0024.png";
+tween: "E1_0025.png";
+tween: "E1_0026.png";
+tween: "E1_0027.png";
+tween: "E1_0028.png";
+tween: "E1_0029.png";
+tween: "E1_0030.png";
+tween: "E1_0031.png";
+tween: "E1_0032.png";
+tween: "E1_0033.png";
+tween: "E1_0034.png";
+tween: "E1_0035.png";
+tween: "E1_0036.png";
+tween: "E1_0037.png";
+tween: "E1_0038.png";
+tween: "E1_0039.png";
+tween: "E1_0040.png";
+tween: "E1_0041.png";
+tween: "E1_0042.png";
+tween: "E1_0043.png";
+tween: "E1_0044.png";
+tween: "E1_0045.png";
+tween: "E1_0046.png";
+tween: "E1_0047.png";
+tween: "E1_0048.png";
+tween: "E1_0049.png";
+tween: "E1_0050.png";
+tween: "E1_0051.png";
+tween: "E1_0052.png";
+tween: "E1_0053.png";
+tween: "E1_0054.png";
+tween: "E1_0055.png";
+tween: "E1_0056.png";
+tween: "E1_0057.png";
+tween: "E1_0058.png";
+tween: "E1_0059.png";
+tween: "E1_0060.png";
+tween: "E1_0061.png";
+tween: "E1_0062.png";
+tween: "E1_0063.png";
+tween: "E1_0064.png";
+tween: "E1_0065.png";
+tween: "E1_0066.png";
+tween: "E1_0067.png";
+tween: "E1_0068.png";
+tween: "E1_0069.png";
+tween: "E1_0070.png";
+tween: "E1_0071.png";
+tween: "E1_0072.png";
+tween: "E1_0073.png";
+tween: "E1_0074.png";
+tween: "E1_0075.png";
+tween: "E1_0076.png";
+tween: "E1_0077.png";
+tween: "E1_0078.png";
+tween: "E1_0079.png";
+tween: "E1_0080.png";
+tween: "E1_0081.png";
+tween: "E1_0082.png";
+tween: "E1_0083.png";
+tween: "E1_0084.png";
+tween: "E1_0085.png";
+tween: "E1_0086.png";
+tween: "E1_0087.png";
+tween: "E1_0088.png";
+tween: "E1_0089.png";
+tween: "E1_0090.png";
+tween: "E1_0100.png";
+tween: "E1_0101.png";
+tween: "E1_0102.png";
+tween: "E1_0103.png";
+tween: "E1_0104.png";
+tween: "E1_0105.png";
+tween: "E1_0106.png";
+tween: "E1_0107.png";
+tween: "E1_0108.png";
+tween: "E1_0109.png";
+tween: "E1_0110.png";
+tween: "E1_0111.png";
+tween: "E1_0112.png";
+tween: "E1_0113.png";
+tween: "E1_0114.png";
+tween: "E1_0115.png";
+tween: "E1_0116.png";
+tween: "E1_0117.png";
+tween: "E1_0118.png";
+tween: "E1_0119.png";
+tween: "E1_0120.png";
+tween: "E1_0121.png";
+tween: "E1_0122.png";
+tween: "E1_0123.png";
+tween: "E1_0124.png";
+tween: "E1_0125.png";
+tween: "E1_0126.png";
+tween: "E1_0127.png";
+tween: "E1_0128.png";
+tween: "E1_0129.png";
+tween: "E1_0130.png";
+tween: "E1_0131.png";
+tween: "E1_0132.png";
+tween: "E1_0133.png";
+tween: "E1_0134.png";
+tween: "E1_0135.png";
+tween: "E1_0136.png";
+tween: "E1_0137.png";
+tween: "E1_0138.png";
+tween: "E1_0139.png";
+tween: "E1_0140.png";
+tween: "E1_0141.png";
+tween: "E1_0142.png";
+tween: "E1_0143.png";
+tween: "E1_0144.png";
+tween: "E1_0145.png";
+tween: "E1_0146.png";
+tween: "E1_0147.png";
+tween: "E1_0148.png";
+tween: "E1_0149.png";
+tween: "E1_0150.png";
+		
+	       }
+	    }
+	}
+         part {
+            name: "button";
+            type: IMAGE;
+        // image { "button";
+            mouse_events: 1;
+            scale: 1;
+            desc { "default";
+               align: 0.5 0.5;
+               fixed: 0 0;
+               min: 0 0;
+               visible: 1;
+                //aspect: 1 1;
+               rel1.relative: 0.92 0.30;
+               rel2.relative: 0.97 0.38;
+               image {
+                     normal: "button.png";
+                  }
+            }
+         }
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "button.in";
+				source: "";
+				action: STATE_SET "button" 0.0;
+				transition: LINEAR 16.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+     program {
+            name:"button.in";
+            signal:"mouse,in";
+            source: "button";
+            action: STATE_SET "default" 0.0;
+            target: "anim";
+            transition: DECELERATE 5.0;
+            after:"anim_rotator";
+         }
+		}
+	}
+}
