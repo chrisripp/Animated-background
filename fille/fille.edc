@@ -1,0 +1,938 @@
+// ---English--
+// Chrisripp/Trikki1
+// for pclos
+
+
+
+// Images
+
+images {
+   image: "fille.png"       COMP;
+   image: "start.png"     COMP;
+}
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+         part {
+            name: "background";
+            mouse_events:  0;
+            scale: 1;
+            description {
+               state:    "default" 0.0;
+               rel1 {
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  relative: 1.0  1.0;
+                  offset:   -1   -1;
+               }
+               image {
+                  normal: "fille.png";
+               }
+            }
+         }
+// ********************ANIM STARS (10)***************************
+
+
+//*******************************0**************************
+         part {
+            name: "start0";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.1 0.0;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.1 0.0;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+//************************************1**************************
+         part {
+            name: "start1";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.9 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset:     0   0;
+
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.9 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// *****************************2****************************
+
+         part {
+            name: "start2";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.1 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.1 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+//*****************************3*****************************
+
+         part {
+            name: "start3";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.4 0.1;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.4 0.1;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+//****************************4*******************************
+
+
+
+         part {
+            name: "start4";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.3 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.3 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+//***************************5*********************************
+
+
+         part {
+            name: "start5";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.3 0.3;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.3 0.3;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+//****************************6********************************
+
+
+
+         part {
+            name: "start6";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.7.2 0.2.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.7.2 0.2.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+//****************************7***************************
+
+
+         part {
+            name: "start7";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.7 0.1.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.7 0.1.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+//*********************************8*******************************
+
+
+         part {
+            name: "start8";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.5.5 0.0.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.5.5 0.0.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+//********************************9*******************************
+
+
+         part {
+            name: "start9";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.6.6 0.1.0;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.6.6 0.1.0;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+//****************************10*******************************
+
+
+
+         part {
+            name: "start10";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.2.5 0.1.9;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.2.5 0.1.9;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+//******************************11********************************
+
+
+         part {
+            name: "start11";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.9.9 0.1.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "no-default" 0.0;
+               align:    0.9.9 0.1.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// ********  Programs  ******  Programas  *******************
+
+//*****************************0******************************
+
+         program {
+            name:	"default0";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start0";
+            transition: DECELERATE 3.0;
+            after: "no-default0";
+
+         }
+
+         program {
+            name:	"no-default0";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start0";
+            transition: DECELERATE 4.5;
+            after: "default0";
+         }
+
+// *****************************1*******************************
+
+         program {
+            name:	"default1";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start1";
+            transition: DECELERATE 5.5;
+            after: "no-default1";
+
+         }
+
+         program {
+            name:	"no-default1";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start1";
+            transition: DECELERATE 3.0;
+            after: "default1";
+         }
+
+// ****************************2******************************
+
+
+         program {
+            name:	"default2";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start2";
+            transition: DECELERATE 5.5;
+            after: "no-default2";
+
+         }
+
+         program {
+            name:	"no-default2";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start2";
+            transition: DECELERATE 3.0;
+            after: "default2";
+         }
+// *****************************3*****************************
+
+         program {
+            name:	"default3";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start3";
+            transition: DECELERATE 7.5;
+            after: "no-default3";
+
+         }
+
+         program {
+            name:	"no-default3";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start3";
+            transition: DECELERATE 5.2;
+            after: "default3";
+         }
+
+//*********************************4******************************
+
+         program {
+            name:	"default4";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start4";
+            transition: DECELERATE 7.5;
+            after: "no-default4";
+
+         }
+
+         program {
+            name:	"no-default4";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start4";
+            transition: DECELERATE 4.2;
+            after: "default4";
+         }
+
+//*****************************5*********************************
+
+
+
+         program {
+            name:	"default5";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start5";
+            transition: DECELERATE 10.5;
+            after: "no-default5";
+
+         }
+
+         program {
+            name:	"no-default5";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start5";
+            transition: DECELERATE 3.2;
+            after: "default5";
+         }
+
+
+//*******************************6*******************************
+
+
+
+         program {
+            name:	"default6";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start6";
+            transition: DECELERATE 11.5;
+            after: "no-default6";
+
+         }
+
+         program {
+            name:	"no-default6";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start6";
+            transition: DECELERATE 5.2;
+            after: "default6";
+         }
+
+//**************************7************************************
+
+
+         program {
+            name:	"default7";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start7";
+            transition: DECELERATE 11.5;
+            after: "no-default7";
+
+         }
+
+         program {
+            name:	"no-default7";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start7";
+            transition: DECELERATE 5.2;
+            after: "default7";
+         }
+
+
+
+//*****************************8********************************
+
+
+         program {
+            name:	"default8";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start8";
+            transition: DECELERATE 13.7;
+            after: "no-default8";
+
+         }
+
+         program {
+            name:	"no-default8";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start8";
+            transition: DECELERATE 4.8;
+            after: "default8";
+         }
+
+//*********************************9******************************
+
+         program {
+            name:	"default9";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start9";
+            transition: DECELERATE 10.5;
+            after: "no-default9";
+
+         }
+
+         program {
+            name:	"no-default9";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start9";
+            transition: DECELERATE 4.5;
+            after: "default9";
+         }
+
+
+//********************************10********************************
+
+
+         program {
+            name:	"default10";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start10";
+            transition: DECELERATE 3.7;
+            after: "no-default10";
+
+         }
+
+         program {
+            name:	"no-default10";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start10";
+            transition: DECELERATE 4.8;
+            after: "default10";
+         }
+
+//********************************11********************************
+
+
+         program {
+            name:	"default11";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "start11";
+            transition: DECELERATE 13.7;
+            after: "no-default11";
+
+         }
+
+         program {
+            name:	"no-default11";
+            source: "background";
+            action: STATE_SET "no-default" 0.0;
+            target: "start11";
+            transition: DECELERATE 4.8;
+            after: "default11";
+         }
+
+
+// ***** End of programs *****  Fin de programas  *************
+
+
+
+// Hope you like it please any suggestions or comments email me :)
+// Espero le guste por favor cualquier sugerencia o comentario envieme un 
+// correo :)
