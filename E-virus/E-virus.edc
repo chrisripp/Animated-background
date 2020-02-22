@@ -1,0 +1,368 @@
+// Title:   E-virus
+// Author:  Chrisripp <hybryde.org>
+
+#define FRAME LOSSY 40
+images {
+   
+//   image: "background.png" FRAME;
+ 
+
+image: "skullE0000.png" COMP;
+image: "skullE0001.png" COMP;
+image: "skullE0002.png" COMP;
+image: "skullE0003.png" COMP;
+image: "skullE0004.png" COMP;
+image: "skullE0005.png" COMP;
+image: "skullE0006.png" COMP;
+image: "skullE0007.png" COMP;
+image: "skullE0008.png" COMP;
+image: "skullE0009.png" COMP;
+image: "skullE0010.png" COMP;
+image: "skullE0011.png" COMP;
+image: "skullE0012.png" COMP;
+image: "skullE0013.png" COMP;
+image: "skullE0014.png" COMP;
+image: "skullE0015.png" COMP;
+image: "skullE0016.png" COMP;
+image: "skullE0017.png" COMP;
+image: "skullE0018.png" COMP;
+image: "skullE0019.png" COMP;
+image: "skullE0020.png" COMP;
+image: "skullE0021.png" COMP;
+image: "skullE0022.png" COMP;
+image: "skullE0023.png" COMP;
+image: "skullE0024.png" COMP;
+image: "skullE0025.png" COMP;
+image: "skullE0026.png" COMP;
+image: "skullE0027.png" COMP;
+image: "skullE0028.png" COMP;
+image: "skullE0029.png" COMP;
+image: "skullE0030.png" COMP;
+image: "skullE0031.png" COMP;
+image: "skullE0032.png" COMP;
+image: "skullE0033.png" COMP;
+image: "skullE0034.png" COMP;
+image: "skullE0035.png" COMP;
+image: "skullE0036.png" COMP;
+image: "skullE0037.png" COMP;
+image: "skullE0038.png" COMP;
+image: "skullE0039.png" COMP;
+image: "skullE0040.png" COMP;
+image: "skullE0041.png" COMP;
+image: "skullE0042.png" COMP;
+image: "skullE0043.png" COMP;
+image: "skullE0044.png" COMP;
+image: "skullE0045.png" COMP;
+image: "skullE0046.png" COMP;
+image: "skullE0047.png" COMP;
+image: "skullE0048.png" COMP;
+image: "skullE0049.png" COMP;
+image: "skullE0050.png" COMP;
+image: "skullE0051.png" COMP;
+image: "skullE0052.png" COMP;
+image: "skullE0053.png" COMP;
+image: "skullE0054.png" COMP;
+image: "skullE0055.png" COMP;
+image: "skullE0056.png" COMP;
+image: "skullE0057.png" COMP;
+image: "skullE0058.png" COMP;
+image: "skullE0059.png" COMP;
+image: "skullE0060.png" COMP;
+image: "skullE0061.png" COMP;
+image: "skullE0062.png" COMP;
+image: "skullE0063.png" COMP;
+image: "skullE0064.png" COMP;
+image: "skullE0065.png" COMP;
+image: "skullE0066.png" COMP;
+image: "skullE0067.png" COMP;
+image: "skullE0068.png" COMP;
+image: "skullE0069.png" COMP;
+image: "skullE0070.png" COMP;
+image: "skullE0071.png" COMP;
+image: "skullE0072.png" COMP;
+image: "skullE0073.png" COMP;
+image: "skullE0074.png" COMP;
+image: "skullE0075.png" COMP;
+image: "skullE0076.png" COMP;
+image: "skullE0077.png" COMP;
+image: "skullE0078.png" COMP;
+image: "skullE0079.png" COMP;
+image: "skullE0080.png" COMP;
+image: "skullE0081.png" COMP;
+image: "skullE0082.png" COMP;
+image: "skullE0083.png" COMP;
+image: "skullE0084.png" COMP;
+image: "skullE0085.png" COMP;
+image: "skullE0086.png" COMP;
+image: "skullE0087.png" COMP;
+image: "skullE0088.png" COMP;
+image: "skullE0089.png" COMP;
+image: "skullE0090.png" COMP;
+image: "skullE0100.png" COMP;
+image: "skullE0101.png" COMP;
+image: "skullE0102.png" COMP;
+image: "skullE0103.png" COMP;
+image: "skullE0104.png" COMP;
+image: "skullE0105.png" COMP;
+image: "skullE0106.png" COMP;
+image: "skullE0107.png" COMP;
+image: "skullE0108.png" COMP;
+image: "skullE0109.png" COMP;
+image: "skullE0110.png" COMP;
+image: "skullE0111.png" COMP;
+image: "skullE0112.png" COMP;
+image: "skullE0113.png" COMP;
+image: "skullE0114.png" COMP;
+image: "skullE0115.png" COMP;
+image: "skullE0116.png" COMP;
+image: "skullE0117.png" COMP;
+image: "skullE0118.png" COMP;
+image: "skullE0119.png" COMP;
+image: "skullE0120.png" COMP;
+image: "skullE0121.png" COMP;
+image: "skullE0122.png" COMP;
+image: "skullE0123.png" COMP;
+image: "skullE0124.png" COMP;
+image: "skullE0125.png" COMP;
+image: "skullE0126.png" COMP;
+image: "skullE0127.png" COMP;
+image: "skullE0128.png" COMP;
+image: "skullE0129.png" COMP;
+image: "skullE0130.png" COMP;
+image: "skullE0131.png" COMP;
+image: "skullE0132.png" COMP;
+image: "skullE0133.png" COMP;
+image: "skullE0134.png" COMP;
+image: "skullE0135.png" COMP;
+image: "skullE0136.png" COMP;
+image: "skullE0137.png" COMP;
+image: "skullE0138.png" COMP;
+image: "skullE0139.png" COMP;
+image: "skullE0140.png" COMP;
+image: "skullE0141.png" COMP;
+image: "skullE0142.png" COMP;
+image: "skullE0143.png" COMP;
+image: "skullE0144.png" COMP;
+image: "skullE0145.png" COMP;
+image: "skullE0146.png" COMP;
+image: "skullE0147.png" COMP;
+image: "skullE0148.png" COMP;
+image: "skullE0149.png" COMP;
+image: "skullE0150.png" COMP;
+      
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	       relative: 0.00 0.00;
+	       offset: 0 0;
+	       }
+	   
+	   
+	        rel2 {
+
+			relative: 1.00 1.00;
+			offset: -1 -1;
+
+		    }	
+
+	   		image {
+
+				normal: "skullE0000.png";
+		              }		
+	   	    }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+                      }
+		
+	    rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+	
+	       image {
+		  normal: "skullE0000.png";
+tween, "skullE0001.png";
+tween, "skullE0002.png";
+tween, "skullE0003.png";
+tween, "skullE0004.png";
+tween, "skullE0005.png";
+tween, "skullE0006.png";
+tween, "skullE0007.png";
+tween, "skullE0008.png";
+tween, "skullE0009.png";
+tween, "skullE0010.png";
+tween, "skullE0011.png";
+tween, "skullE0012.png";
+tween, "skullE0013.png";
+tween, "skullE0014.png";
+tween, "skullE0015.png";
+tween, "skullE0016.png";
+tween, "skullE0017.png";
+tween, "skullE0018.png";
+tween, "skullE0019.png";
+tween, "skullE0020.png";
+tween, "skullE0021.png";
+tween, "skullE0022.png";
+tween, "skullE0023.png";
+tween, "skullE0024.png";
+tween, "skullE0025.png";
+tween, "skullE0026.png";
+tween, "skullE0027.png";
+tween, "skullE0028.png";
+tween, "skullE0029.png";
+tween, "skullE0030.png";
+tween, "skullE0031.png";
+tween, "skullE0032.png";
+tween, "skullE0033.png";
+tween, "skullE0034.png";
+tween, "skullE0035.png";
+tween, "skullE0036.png";
+tween, "skullE0037.png";
+tween, "skullE0038.png";
+tween, "skullE0039.png";
+tween, "skullE0040.png";
+tween, "skullE0041.png";
+tween, "skullE0042.png";
+tween, "skullE0043.png";
+tween, "skullE0044.png";
+tween, "skullE0045.png";
+tween, "skullE0046.png";
+tween, "skullE0047.png";
+tween, "skullE0048.png";
+tween, "skullE0049.png";
+tween, "skullE0050.png";
+tween, "skullE0051.png";
+tween, "skullE0052.png";
+tween, "skullE0053.png";
+tween, "skullE0054.png";
+tween, "skullE0055.png";
+tween, "skullE0056.png";
+tween, "skullE0057.png";
+tween, "skullE0058.png";
+tween, "skullE0059.png";
+tween, "skullE0060.png";
+tween, "skullE0061.png";
+tween, "skullE0062.png";
+tween, "skullE0063.png";
+tween, "skullE0064.png";
+tween, "skullE0065.png";
+tween, "skullE0066.png";
+tween, "skullE0067.png";
+tween, "skullE0068.png";
+tween, "skullE0069.png";
+tween, "skullE0070.png";
+tween, "skullE0071.png";
+tween, "skullE0072.png";
+tween, "skullE0073.png";
+tween, "skullE0074.png";
+tween, "skullE0075.png";
+tween, "skullE0076.png";
+tween, "skullE0077.png";
+tween, "skullE0078.png";
+tween, "skullE0079.png";
+tween, "skullE0080.png";
+tween, "skullE0081.png";
+tween, "skullE0082.png";
+tween, "skullE0083.png";
+tween, "skullE0084.png";
+tween, "skullE0085.png";
+tween, "skullE0086.png";
+tween, "skullE0087.png";
+tween, "skullE0088.png";
+tween, "skullE0089.png";
+tween, "skullE0090.png";
+tween, "skullE0100.png";
+tween, "skullE0101.png";
+tween, "skullE0102.png";
+tween, "skullE0103.png";
+tween, "skullE0104.png";
+tween, "skullE0105.png";
+tween, "skullE0106.png";
+tween, "skullE0107.png";
+tween, "skullE0108.png";
+tween, "skullE0109.png";
+tween, "skullE0110.png";
+tween, "skullE0111.png";
+tween, "skullE0112.png";
+tween, "skullE0113.png";
+tween, "skullE0114.png";
+tween, "skullE0115.png";
+tween, "skullE0116.png";
+tween, "skullE0117.png";
+tween, "skullE0118.png";
+tween, "skullE0119.png";
+tween, "skullE0120.png";
+tween, "skullE0121.png";
+tween, "skullE0122.png";
+tween, "skullE0123.png";
+tween, "skullE0124.png";
+tween, "skullE0125.png";
+tween, "skullE0126.png";
+tween, "skullE0127.png";
+tween, "skullE0128.png";
+tween, "skullE0129.png";
+tween, "skullE0130.png";
+tween, "skullE0131.png";
+tween, "skullE0132.png";
+tween, "skullE0133.png";
+tween, "skullE0134.png";
+tween, "skullE0135.png";
+tween, "skullE0136.png";
+tween, "skullE0137.png";
+tween, "skullE0138.png";
+tween, "skullE0139.png";
+tween, "skullE0140.png";
+tween, "skullE0141.png";
+tween, "skullE0142.png";
+tween, "skullE0143.png";
+tween, "skullE0144.png";
+tween, "skullE0145.png";
+tween, "skullE0146.png";
+tween, "skullE0147.png";
+tween, "skullE0148.png";
+tween, "skullE0149.png";
+tween, "skullE0150.png";
+		
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 16.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
