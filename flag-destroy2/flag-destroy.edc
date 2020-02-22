@@ -1,0 +1,592 @@
+// Title:   Pclos-Flag-corsaire
+// Author:  Chrisripp <hybryde.org>
+
+#define COMP LOSSY 80 // on définie le taux de compression des images
+
+// On place les images de notre fond animé
+images {
+image: "background.png" LOSSY 80;
+image: "mat.png" LOSSY 80;
+image: "Flagc0000.png" LOSSY 80;
+image: "Flagc0001.png" LOSSY 80;
+image: "Flagc0002.png" LOSSY 80;
+image: "Flagc0003.png" LOSSY 80;
+image: "Flagc0004.png" LOSSY 80;
+image: "Flagc0005.png" LOSSY 80;
+image: "Flagc0006.png" LOSSY 80;
+image: "Flagc0007.png" LOSSY 80;
+image: "Flagc0008.png" LOSSY 80;
+image: "Flagc0009.png" LOSSY 80;
+image: "Flagc0010.png" LOSSY 80;
+image: "Flagc0011.png" LOSSY 80;
+image: "Flagc0012.png" LOSSY 80;
+image: "Flagc0013.png" LOSSY 80;
+image: "Flagc0014.png" LOSSY 80;
+image: "Flagc0015.png" LOSSY 80;
+image: "Flagc0016.png" LOSSY 80;
+image: "Flagc0017.png" LOSSY 80;
+image: "Flagc0018.png" LOSSY 80;
+image: "Flagc0019.png" LOSSY 80;
+image: "Flagc0020.png" LOSSY 80;
+image: "Flagc0021.png" LOSSY 80;
+image: "Flagc0022.png" LOSSY 80;
+image: "Flagc0023.png" LOSSY 80;
+image: "Flagc0024.png" LOSSY 80;
+image: "Flagc0025.png" LOSSY 80;
+image: "Flagc0026.png" LOSSY 80;
+image: "Flagc0027.png" LOSSY 80;
+image: "Flagc0028.png" LOSSY 80;
+image: "Flagc0029.png" LOSSY 80;
+image: "Flagc0030.png" LOSSY 80;
+image: "Flagc0031.png" LOSSY 80;
+image: "Flagc0032.png" LOSSY 80;
+image: "Flagc0033.png" LOSSY 80;
+image: "Flagc0034.png" LOSSY 80;
+image: "Flagc0035.png" LOSSY 80;
+image: "Flagc0036.png" LOSSY 80;
+image: "Flagc0037.png" LOSSY 80;
+image: "Flagc0038.png" LOSSY 80;
+image: "Flagc0039.png" LOSSY 80;
+image: "Flagc0040.png" LOSSY 80;
+image: "Flagc0041.png" LOSSY 80;
+image: "Flagc0042.png" LOSSY 80;
+image: "Flagc0043.png" LOSSY 80;
+image: "Flagc0044.png" LOSSY 80;
+image: "Flagc0045.png" LOSSY 80;
+image: "Flagc0046.png" LOSSY 80;
+image: "Flagc0047.png" LOSSY 80;
+image: "Flagc0048.png" LOSSY 80;
+image: "Flagc0049.png" LOSSY 80;
+image: "Flagc0050.png" LOSSY 80;
+image: "Flagc0051.png" LOSSY 80;
+image: "Flagc0052.png" LOSSY 80;
+image: "Flagc0053.png" LOSSY 80;
+image: "Flagc0054.png" LOSSY 80;
+image: "Flagc0055.png" LOSSY 80;
+image: "Flagc0056.png" LOSSY 80;
+image: "Flagc0057.png" LOSSY 80;
+image: "Flagc0058.png" LOSSY 80;
+image: "Flagc0059.png" LOSSY 80;
+image: "Flagc0060.png" LOSSY 80;
+image: "Flagc0061.png" LOSSY 80;
+image: "Flagc0062.png" LOSSY 80;
+image: "Flagc0063.png" LOSSY 80;
+image: "Flagc0064.png" LOSSY 80;
+image: "Flagc0065.png" LOSSY 80;
+image: "Flagc0066.png" LOSSY 80;
+image: "Flagc0067.png" LOSSY 80;
+image: "Flagc0068.png" LOSSY 80;
+image: "Flagc0069.png" LOSSY 80;
+image: "Flagc0070.png" LOSSY 80;
+image: "Flagc0071.png" LOSSY 80;
+image: "Flagc0072.png" LOSSY 80;
+image: "Flagc0073.png" LOSSY 80;
+image: "Flagc0074.png" LOSSY 80;
+image: "Flagc0075.png" LOSSY 80;
+image: "Flagc0076.png" LOSSY 80;
+image: "Flagc0077.png" LOSSY 80;
+image: "Flagc0078.png" LOSSY 80;
+image: "Flagc0079.png" LOSSY 80;
+image: "Flagc0080.png" LOSSY 80;
+image: "Flagc0081.png" LOSSY 80;
+image: "Flagc0082.png" LOSSY 80;
+image: "Flagc0083.png" LOSSY 80;
+image: "Flagc0084.png" LOSSY 80;
+image: "Flagc0085.png" LOSSY 80;
+image: "Flagc0086.png" LOSSY 80;
+image: "Flagc0087.png" LOSSY 80;
+image: "Flagc0088.png" LOSSY 80;
+image: "Flagc0089.png" LOSSY 80;
+image: "Flagc0090.png" LOSSY 80;
+image: "Flagc0091.png" LOSSY 80;
+image: "Flagc0092.png" LOSSY 80;
+image: "Flagc0093.png" LOSSY 80;
+image: "Flagc0094.png" LOSSY 80;
+image: "Flagc0095.png" LOSSY 80;
+image: "Flagc0096.png" LOSSY 80;
+image: "Flagc0097.png" LOSSY 80;
+image: "Flagc0098.png" LOSSY 80;
+image: "Flagc0099.png" LOSSY 80;
+image: "Flagc0100.png" LOSSY 80;
+image: "Flagc0101.png" LOSSY 80;
+image: "Flagc0102.png" LOSSY 80;
+image: "Flagc0103.png" LOSSY 80;
+image: "Flagc0104.png" LOSSY 80;
+image: "Flagc0105.png" LOSSY 80;
+image: "Flagc0106.png" LOSSY 80;
+image: "Flagc0107.png" LOSSY 80;
+image: "Flagc0108.png" LOSSY 80;
+image: "Flagc0109.png" LOSSY 80;
+image: "Flagc0110.png" LOSSY 80;
+image: "Flagc0111.png" LOSSY 80;
+image: "Flagc0112.png" LOSSY 80;
+image: "Flagc0113.png" LOSSY 80;
+image: "Flagc0114.png" LOSSY 80;
+image: "Flagc0115.png" LOSSY 80;
+image: "Flagc0116.png" LOSSY 80;
+image: "Flagc0117.png" LOSSY 80;
+image: "Flagc0118.png" LOSSY 80;
+image: "Flagc0119.png" LOSSY 80;
+image: "Flagc0120.png" LOSSY 80;
+image: "Flagc0121.png" LOSSY 80;
+image: "Flagc0122.png" LOSSY 80;
+image: "Flagc0123.png" LOSSY 80;
+image: "Flagc0124.png" LOSSY 80;
+image: "Flagc0125.png" LOSSY 80;
+image: "Flagc0126.png" LOSSY 80;
+image: "Flagc0127.png" LOSSY 80;
+image: "Flagc0128.png" LOSSY 80;
+image: "Flagc0129.png" LOSSY 80;
+image: "Flagc0130.png" LOSSY 80;
+image: "Flagc0131.png" LOSSY 80;
+image: "Flagc0132.png" LOSSY 80;
+image: "Flagc0133.png" LOSSY 80;
+image: "Flagc0134.png" LOSSY 80;
+image: "Flagc0135.png" LOSSY 80;
+image: "Flagc0136.png" LOSSY 80;
+image: "Flagc0137.png" LOSSY 80;
+image: "Flagc0138.png" LOSSY 80;
+image: "Flagc0139.png" LOSSY 80;
+image: "Flagc0140.png" LOSSY 80;
+image: "Flagc0141.png" LOSSY 80;
+image: "Flagc0142.png" LOSSY 80;
+image: "Flagc0143.png" LOSSY 80;
+image: "Flagc0144.png" LOSSY 80;
+image: "Flagc0145.png" LOSSY 80;
+image: "Flagc0146.png" LOSSY 80;
+image: "Flagc0147.png" LOSSY 80;
+image: "Flagc0148.png" LOSSY 80;
+image: "Flagc0149.png" LOSSY 80;
+image: "Flagc0150.png" LOSSY 80;
+image: "Flagc0151.png" LOSSY 80;
+image: "Flagc0152.png" LOSSY 80;
+image: "Flagc0153.png" LOSSY 80;
+image: "Flagc0154.png" LOSSY 80;
+image: "Flagc0155.png" LOSSY 80;
+image: "Flagc0156.png" LOSSY 80;
+image: "Flagc0157.png" LOSSY 80;
+image: "Flagc0158.png" LOSSY 80;
+image: "Flagc0159.png" LOSSY 80;
+image: "Flagc0160.png" LOSSY 80;
+image: "Flagc0161.png" LOSSY 80;
+image: "Flagc0162.png" LOSSY 80;
+image: "Flagc0163.png" LOSSY 80;
+image: "Flagc0164.png" LOSSY 80;
+image: "Flagc0165.png" LOSSY 80;
+image: "Flagc0166.png" LOSSY 80;
+image: "Flagc0167.png" LOSSY 80;
+image: "Flagc0168.png" LOSSY 80;
+image: "Flagc0169.png" LOSSY 80;
+image: "Flagc0170.png" LOSSY 80;
+image: "Flagc0171.png" LOSSY 80;
+image: "Flagc0172.png" LOSSY 80;
+image: "Flagc0173.png" LOSSY 80;
+image: "Flagc0174.png" LOSSY 80;
+image: "Flagc0175.png" LOSSY 80;
+image: "Flagc0176.png" LOSSY 80;
+image: "Flagc0177.png" LOSSY 80;
+image: "Flagc0178.png" LOSSY 80;
+image: "Flagc0179.png" LOSSY 80;
+image: "Flagc0180.png" LOSSY 80;
+image: "Flagc0181.png" LOSSY 80;
+image: "Flagc0182.png" LOSSY 80;
+image: "Flagc0183.png" LOSSY 80;
+image: "Flagc0184.png" LOSSY 80;
+image: "Flagc0185.png" LOSSY 80;
+image: "Flagc0186.png" LOSSY 80;
+image: "Flagc0187.png" LOSSY 80;
+image: "Flagc0188.png" LOSSY 80;
+image: "Flagc0189.png" LOSSY 80;
+image: "Flagc0190.png" LOSSY 80;
+image: "Flagc0191.png" LOSSY 80;
+image: "Flagc0192.png" LOSSY 80;
+image: "Flagc0193.png" LOSSY 80;
+image: "Flagc0194.png" LOSSY 80;
+image: "Flagc0195.png" LOSSY 80;
+image: "Flagc0196.png" LOSSY 80;
+image: "Flagc0197.png" LOSSY 80;
+image: "Flagc0198.png" LOSSY 80;
+image: "Flagc0199.png" LOSSY 80;
+image: "Flagc0200.png" LOSSY 80;
+image: "Flagc0201.png" LOSSY 80;
+image: "Flagc0202.png" LOSSY 80;
+image: "Flagc0203.png" LOSSY 80;
+image: "Flagc0204.png" LOSSY 80;
+image: "Flagc0205.png" LOSSY 80;
+image: "Flagc0206.png" LOSSY 80;
+image: "Flagc0207.png" LOSSY 80;
+image: "Flagc0208.png" LOSSY 80;
+image: "Flagc0209.png" LOSSY 80;
+image: "Flagc0210.png" LOSSY 80;
+image: "Flagc0211.png" LOSSY 80;
+image: "Flagc0212.png" LOSSY 80;
+image: "Flagc0213.png" LOSSY 80;
+image: "Flagc0214.png" LOSSY 80;
+image: "Flagc0215.png" LOSSY 80;
+image: "Flagc0216.png" LOSSY 80;
+image: "Flagc0217.png" LOSSY 80;
+image: "Flagc0218.png" LOSSY 80;
+image: "Flagc0219.png" LOSSY 80;
+image: "Flagc0220.png" LOSSY 80;
+image: "Flagc0221.png" LOSSY 80;
+image: "Flagc0222.png" LOSSY 80;
+image: "Flagc0223.png" LOSSY 80;
+image: "Flagc0224.png" LOSSY 80;
+image: "Flagc0225.png" LOSSY 80;
+image: "Flagc0226.png" LOSSY 80;
+image: "Flagc0227.png" LOSSY 80;
+image: "Flagc0228.png" LOSSY 80;
+image: "Flagc0229.png" LOSSY 80;
+image: "Flagc0230.png" LOSSY 80;
+image: "Flagc0231.png" LOSSY 80;
+image: "Flagc0232.png" LOSSY 80;
+image: "Flagc0233.png" LOSSY 80;
+image: "Flagc0234.png" LOSSY 80;
+image: "Flagc0235.png" LOSSY 80;
+image: "Flagc0236.png" LOSSY 80;
+image: "Flagc0237.png" LOSSY 80;
+image: "Flagc0238.png" LOSSY 80;
+image: "Flagc0239.png" LOSSY 80;
+image: "Flagc0240.png" LOSSY 80;
+      
+   }
+// On place le fond d'écran
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	       relative: 0.00 0.00;
+	       offset: 0 0;
+	       }
+	   
+	   
+	        rel2 {
+
+			relative: 1.00 1.00;
+			offset: -1 -1;
+
+		    }	
+
+	   		image {
+
+				normal: "background.png";
+		              }		
+	   	    }
+           }
+//--------------------------------mat-------------------------------------------
+part {
+	    name: "mat_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state:    "default" 0.0;
+	    min: 300 300;
+	    max: 300 300;
+            align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 00 900;
+                      }
+		
+	    rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+
+	   		image {
+
+				normal: "mat.png";
+		              }		
+                  }     		
+//------------------------------------------------------------ANIM----------------------------------------------
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 300 300;
+	    max: 300 300;
+            align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 00 -300;
+                      }
+		
+	    rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+	
+	       image {
+normal: "Flagc0000.png";
+tween, "Flagc0001.png";
+tween, "Flagc0002.png";
+tween, "Flagc0003.png";
+tween, "Flagc0004.png";
+tween, "Flagc0005.png";
+tween, "Flagc0006.png";
+tween, "Flagc0007.png";
+tween, "Flagc0008.png";
+tween, "Flagc0009.png";
+tween, "Flagc0010.png";
+tween, "Flagc0011.png";
+tween, "Flagc0012.png";
+tween, "Flagc0013.png";
+tween, "Flagc0014.png";
+tween, "Flagc0015.png";
+tween, "Flagc0016.png";
+tween, "Flagc0017.png";
+tween, "Flagc0018.png";
+tween, "Flagc0019.png";
+tween, "Flagc0020.png";
+tween, "Flagc0021.png";
+tween, "Flagc0022.png";
+tween, "Flagc0023.png";
+tween, "Flagc0024.png";
+tween, "Flagc0025.png";
+tween, "Flagc0026.png";
+tween, "Flagc0027.png";
+tween, "Flagc0028.png";
+tween, "Flagc0029.png";
+tween, "Flagc0030.png";
+tween, "Flagc0031.png";
+tween, "Flagc0032.png";
+tween, "Flagc0033.png";
+tween, "Flagc0034.png";
+tween, "Flagc0035.png";
+tween, "Flagc0036.png";
+tween, "Flagc0037.png";
+tween, "Flagc0038.png";
+tween, "Flagc0039.png";
+tween, "Flagc0040.png";
+tween, "Flagc0041.png";
+tween, "Flagc0042.png";
+tween, "Flagc0043.png";
+tween, "Flagc0044.png";
+tween, "Flagc0045.png";
+tween, "Flagc0046.png";
+tween, "Flagc0047.png";
+tween, "Flagc0048.png";
+tween, "Flagc0049.png";
+tween, "Flagc0050.png";
+tween, "Flagc0051.png";
+tween, "Flagc0052.png";
+tween, "Flagc0053.png";
+tween, "Flagc0054.png";
+tween, "Flagc0055.png";
+tween, "Flagc0056.png";
+tween, "Flagc0057.png";
+tween, "Flagc0058.png";
+tween, "Flagc0059.png";
+tween, "Flagc0060.png";
+tween, "Flagc0061.png";
+tween, "Flagc0062.png";
+tween, "Flagc0063.png";
+tween, "Flagc0064.png";
+tween, "Flagc0065.png";
+tween, "Flagc0066.png";
+tween, "Flagc0067.png";
+tween, "Flagc0068.png";
+tween, "Flagc0069.png";
+tween, "Flagc0070.png";
+tween, "Flagc0071.png";
+tween, "Flagc0072.png";
+tween, "Flagc0073.png";
+tween, "Flagc0074.png";
+tween, "Flagc0075.png";
+tween, "Flagc0076.png";
+tween, "Flagc0077.png";
+tween, "Flagc0078.png";
+tween, "Flagc0079.png";
+tween, "Flagc0080.png";
+tween, "Flagc0081.png";
+tween, "Flagc0082.png";
+tween, "Flagc0083.png";
+tween, "Flagc0084.png";
+tween, "Flagc0085.png";
+tween, "Flagc0086.png";
+tween, "Flagc0087.png";
+tween, "Flagc0088.png";
+tween, "Flagc0089.png";
+tween, "Flagc0090.png";
+tween, "Flagc0091.png";
+tween, "Flagc0092.png";
+tween, "Flagc0093.png";
+tween, "Flagc0094.png";
+tween, "Flagc0095.png";
+tween, "Flagc0096.png";
+tween, "Flagc0097.png";
+tween, "Flagc0098.png";
+tween, "Flagc0099.png";
+tween, "Flagc0100.png";
+tween, "Flagc0101.png";
+tween, "Flagc0102.png";
+tween, "Flagc0103.png";
+tween, "Flagc0104.png";
+tween, "Flagc0105.png";
+tween, "Flagc0106.png";
+tween, "Flagc0107.png";
+tween, "Flagc0108.png";
+tween, "Flagc0109.png";
+tween, "Flagc0110.png";
+tween, "Flagc0111.png";
+tween, "Flagc0112.png";
+tween, "Flagc0113.png";
+tween, "Flagc0114.png";
+tween, "Flagc0115.png";
+tween, "Flagc0116.png";
+tween, "Flagc0117.png";
+tween, "Flagc0118.png";
+tween, "Flagc0119.png";
+tween, "Flagc0120.png";
+tween, "Flagc0121.png";
+tween, "Flagc0122.png";
+tween, "Flagc0123.png";
+tween, "Flagc0124.png";
+tween, "Flagc0125.png";
+tween, "Flagc0126.png";
+tween, "Flagc0127.png";
+tween, "Flagc0128.png";
+tween, "Flagc0129.png";
+tween, "Flagc0130.png";
+tween, "Flagc0131.png";
+tween, "Flagc0132.png";
+tween, "Flagc0133.png";
+tween, "Flagc0134.png";
+tween, "Flagc0135.png";
+tween, "Flagc0136.png";
+tween, "Flagc0137.png";
+tween, "Flagc0138.png";
+tween, "Flagc0139.png";
+tween, "Flagc0140.png";
+tween, "Flagc0141.png";
+tween, "Flagc0142.png";
+tween, "Flagc0143.png";
+tween, "Flagc0144.png";
+tween, "Flagc0145.png";
+tween, "Flagc0146.png";
+tween, "Flagc0147.png";
+tween, "Flagc0148.png";
+tween, "Flagc0149.png";
+tween, "Flagc0150.png";
+tween, "Flagc0151.png";
+tween, "Flagc0152.png";
+tween, "Flagc0153.png";
+tween, "Flagc0154.png";
+tween, "Flagc0155.png";
+tween, "Flagc0156.png";
+tween, "Flagc0157.png";
+tween, "Flagc0158.png";
+tween, "Flagc0159.png";
+tween, "Flagc0160.png";
+tween, "Flagc0161.png";
+tween, "Flagc0162.png";
+tween, "Flagc0163.png";
+tween, "Flagc0164.png";
+tween, "Flagc0165.png";
+tween, "Flagc0166.png";
+tween, "Flagc0167.png";
+tween, "Flagc0168.png";
+tween, "Flagc0169.png";
+tween, "Flagc0170.png";
+tween, "Flagc0171.png";
+tween, "Flagc0172.png";
+tween, "Flagc0173.png";
+tween, "Flagc0174.png";
+tween, "Flagc0175.png";
+tween, "Flagc0176.png";
+tween, "Flagc0177.png";
+tween, "Flagc0178.png";
+tween, "Flagc0179.png";
+tween, "Flagc0180.png";
+tween, "Flagc0181.png";
+tween, "Flagc0182.png";
+tween, "Flagc0183.png";
+tween, "Flagc0184.png";
+tween, "Flagc0185.png";
+tween, "Flagc0186.png";
+tween, "Flagc0187.png";
+tween, "Flagc0188.png";
+tween, "Flagc0189.png";
+tween, "Flagc0190.png";
+tween, "Flagc0191.png";
+tween, "Flagc0192.png";
+tween, "Flagc0193.png";
+tween, "Flagc0194.png";
+tween, "Flagc0195.png";
+tween, "Flagc0196.png";
+tween, "Flagc0197.png";
+tween, "Flagc0198.png";
+tween, "Flagc0199.png";
+tween, "Flagc0200.png";
+tween, "Flagc0201.png";
+tween, "Flagc0202.png";
+tween, "Flagc0203.png";
+tween, "Flagc0204.png";
+tween, "Flagc0205.png";
+tween, "Flagc0206.png";
+tween, "Flagc0207.png";
+tween, "Flagc0208.png";
+tween, "Flagc0209.png";
+tween, "Flagc0210.png";
+tween, "Flagc0211.png";
+tween, "Flagc0212.png";
+tween, "Flagc0213.png";
+tween, "Flagc0214.png";
+tween, "Flagc0215.png";
+tween, "Flagc0216.png";
+tween, "Flagc0217.png";
+tween, "Flagc0218.png";
+tween, "Flagc0219.png";
+tween, "Flagc0220.png";
+tween, "Flagc0221.png";
+tween, "Flagc0222.png";
+tween, "Flagc0223.png";
+tween, "Flagc0224.png";
+tween, "Flagc0225.png";
+tween, "Flagc0226.png";
+tween, "Flagc0227.png";
+tween, "Flagc0228.png";
+tween, "Flagc0229.png";
+tween, "Flagc0230.png";
+tween, "Flagc0231.png";
+tween, "Flagc0232.png";
+tween, "Flagc0233.png";
+tween, "Flagc0234.png";
+tween, "Flagc0235.png";
+tween, "Flagc0236.png";
+tween, "Flagc0237.png";
+tween, "Flagc0238.png";
+tween, "Flagc0239.png";
+tween, "Flagc0240.png";
+  
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "vitesse-anim";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 04.0;
+				target: "anim";
+				after: "vitesse-anim";
+			}
+		}
+	}
+}
