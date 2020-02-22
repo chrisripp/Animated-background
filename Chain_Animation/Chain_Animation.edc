@@ -1,0 +1,465 @@
+// Title:   Chain_Animation
+// Author:  Chrisripp <hybryde.org> Pclinux User 
+// Chain_Animation loop animation, ffmpeg -i your.mov yourfile%02d.png
+
+
+#define FRAME LOSSY 60
+images {
+   
+//   image: "background.png" FRAME;
+
+image: "Chain_Animation01.png" COMP; 
+image: "Chain_Animation02.png" COMP;
+image: "Chain_Animation03.png" COMP;
+image: "Chain_Animation04.png" COMP;
+image: "Chain_Animation05.png" COMP;
+image: "Chain_Animation06.png" COMP;
+image: "Chain_Animation07.png" COMP;
+image: "Chain_Animation08.png" COMP;
+image: "Chain_Animation09.png" COMP;
+image: "Chain_Animation10.png" COMP;
+image: "Chain_Animation11.png" COMP;
+image: "Chain_Animation12.png" COMP;
+image: "Chain_Animation13.png" COMP;
+image: "Chain_Animation14.png" COMP;
+image: "Chain_Animation15.png" COMP;
+image: "Chain_Animation16.png" COMP;
+image: "Chain_Animation17.png" COMP;
+image: "Chain_Animation18.png" COMP;
+image: "Chain_Animation19.png" COMP;
+image: "Chain_Animation20.png" COMP;
+image: "Chain_Animation21.png" COMP;
+image: "Chain_Animation22.png" COMP;
+image: "Chain_Animation23.png" COMP;
+image: "Chain_Animation24.png" COMP;
+image: "Chain_Animation25.png" COMP;
+image: "Chain_Animation26.png" COMP;
+image: "Chain_Animation27.png" COMP;
+image: "Chain_Animation28.png" COMP;
+image: "Chain_Animation29.png" COMP;
+image: "Chain_Animation30.png" COMP;
+image: "Chain_Animation31.png" COMP;
+image: "Chain_Animation32.png" COMP;
+image: "Chain_Animation33.png" COMP;
+image: "Chain_Animation34.png" COMP;
+image: "Chain_Animation35.png" COMP;
+image: "Chain_Animation36.png" COMP;
+image: "Chain_Animation37.png" COMP;
+image: "Chain_Animation38.png" COMP;
+image: "Chain_Animation39.png" COMP;
+image: "Chain_Animation40.png" COMP;
+image: "Chain_Animation41.png" COMP;
+image: "Chain_Animation42.png" COMP;
+image: "Chain_Animation43.png" COMP;
+image: "Chain_Animation44.png" COMP;
+image: "Chain_Animation45.png" COMP;
+image: "Chain_Animation46.png" COMP;
+image: "Chain_Animation47.png" COMP;
+image: "Chain_Animation48.png" COMP;
+image: "Chain_Animation49.png" COMP;
+image: "Chain_Animation50.png" COMP;
+image: "Chain_Animation51.png" COMP;
+image: "Chain_Animation52.png" COMP;
+image: "Chain_Animation53.png" COMP;
+image: "Chain_Animation54.png" COMP;
+image: "Chain_Animation55.png" COMP;
+image: "Chain_Animation56.png" COMP;
+image: "Chain_Animation57.png" COMP;
+image: "Chain_Animation58.png" COMP;
+image: "Chain_Animation59.png" COMP;
+image: "Chain_Animation60.png" COMP;
+image: "Chain_Animation61.png" COMP;
+image: "Chain_Animation62.png" COMP;
+image: "Chain_Animation63.png" COMP;
+image: "Chain_Animation64.png" COMP;
+image: "Chain_Animation65.png" COMP;
+image: "Chain_Animation66.png" COMP;
+image: "Chain_Animation67.png" COMP;
+image: "Chain_Animation68.png" COMP;
+image: "Chain_Animation69.png" COMP;
+image: "Chain_Animation70.png" COMP;
+image: "Chain_Animation71.png" COMP;
+image: "Chain_Animation72.png" COMP;
+image: "Chain_Animation73.png" COMP;
+image: "Chain_Animation74.png" COMP;
+image: "Chain_Animation75.png" COMP;
+image: "Chain_Animation76.png" COMP;
+image: "Chain_Animation77.png" COMP;
+image: "Chain_Animation78.png" COMP;
+image: "Chain_Animation79.png" COMP;
+image: "Chain_Animation80.png" COMP;
+image: "Chain_Animation81.png" COMP;
+image: "Chain_Animation82.png" COMP;
+image: "Chain_Animation83.png" COMP;
+image: "Chain_Animation84.png" COMP;
+image: "Chain_Animation85.png" COMP;
+image: "Chain_Animation86.png" COMP;
+image: "Chain_Animation87.png" COMP;
+image: "Chain_Animation88.png" COMP;
+image: "Chain_Animation89.png" COMP;
+image: "Chain_Animation90.png" COMP;
+image: "Chain_Animation91.png" COMP;
+image: "Chain_Animation92.png" COMP;
+image: "Chain_Animation93.png" COMP;
+image: "Chain_Animation94.png" COMP;
+image: "Chain_Animation95.png" COMP;
+image: "Chain_Animation96.png" COMP;
+image: "Chain_Animation97.png" COMP;
+image: "Chain_Animation98.png" COMP;
+image: "Chain_Animation99.png" COMP;
+image: "Chain_Animation100.png" COMP;
+image: "Chain_Animation101.png" COMP;
+image: "Chain_Animation102.png" COMP;
+image: "Chain_Animation103.png" COMP;
+image: "Chain_Animation104.png" COMP;
+image: "Chain_Animation105.png" COMP;
+image: "Chain_Animation106.png" COMP;
+image: "Chain_Animation107.png" COMP;
+image: "Chain_Animation108.png" COMP;
+image: "Chain_Animation109.png" COMP;
+image: "Chain_Animation110.png" COMP;
+image: "Chain_Animation111.png" COMP;
+image: "Chain_Animation112.png" COMP;
+image: "Chain_Animation113.png" COMP;
+image: "Chain_Animation114.png" COMP;
+image: "Chain_Animation115.png" COMP;
+image: "Chain_Animation116.png" COMP;
+image: "Chain_Animation117.png" COMP;
+image: "Chain_Animation118.png" COMP;
+image: "Chain_Animation119.png" COMP;
+image: "Chain_Animation120.png" COMP;
+image: "Chain_Animation121.png" COMP;
+image: "Chain_Animation122.png" COMP;
+image: "Chain_Animation123.png" COMP;
+image: "Chain_Animation124.png" COMP;
+image: "Chain_Animation125.png" COMP;
+image: "Chain_Animation126.png" COMP;
+image: "Chain_Animation127.png" COMP;
+image: "Chain_Animation128.png" COMP;
+image: "Chain_Animation129.png" COMP;
+image: "Chain_Animation130.png" COMP;
+image: "Chain_Animation131.png" COMP;
+image: "Chain_Animation132.png" COMP;
+image: "Chain_Animation133.png" COMP;
+image: "Chain_Animation134.png" COMP;
+image: "Chain_Animation135.png" COMP;
+image: "Chain_Animation136.png" COMP;
+image: "Chain_Animation137.png" COMP;
+image: "Chain_Animation138.png" COMP;
+image: "Chain_Animation139.png" COMP;
+image: "Chain_Animation140.png" COMP;
+image: "Chain_Animation141.png" COMP;
+image: "Chain_Animation142.png" COMP;
+image: "Chain_Animation143.png" COMP;
+image: "Chain_Animation144.png" COMP;
+image: "Chain_Animation145.png" COMP;
+image: "Chain_Animation146.png" COMP;
+image: "Chain_Animation147.png" COMP;
+image: "Chain_Animation148.png" COMP;
+image: "Chain_Animation149.png" COMP;
+image: "Chain_Animation150.png" COMP;
+image: "Chain_Animation151.png" COMP;
+image: "Chain_Animation152.png" COMP;
+image: "Chain_Animation153.png" COMP;
+image: "Chain_Animation154.png" COMP;
+image: "Chain_Animation155.png" COMP;
+image: "Chain_Animation156.png" COMP;
+image: "Chain_Animation157.png" COMP;
+image: "Chain_Animation158.png" COMP;
+image: "Chain_Animation159.png" COMP;
+image: "Chain_Animation160.png" COMP;
+image: "Chain_Animation161.png" COMP;
+image: "Chain_Animation162.png" COMP;
+image: "Chain_Animation163.png" COMP;
+image: "Chain_Animation164.png" COMP;
+image: "Chain_Animation165.png" COMP;
+image: "Chain_Animation166.png" COMP;
+image: "Chain_Animation167.png" COMP;
+image: "Chain_Animation168.png" COMP;
+image: "Chain_Animation169.png" COMP;
+image: "Chain_Animation170.png" COMP;
+image: "Chain_Animation171.png" COMP;
+image: "Chain_Animation172.png" COMP;
+image: "Chain_Animation173.png" COMP;
+image: "Chain_Animation174.png" COMP;
+image: "Chain_Animation175.png" COMP;
+image: "Chain_Animation176.png" COMP;
+image: "Chain_Animation177.png" COMP;
+image: "Chain_Animation178.png" COMP;
+image: "Chain_Animation179.png" COMP;
+image: "Chain_Animation180.png" COMP;
+image: "Chain_Animation181.png" COMP;
+image: "Chain_Animation182.png" COMP;
+image: "Chain_Animation183.png" COMP;
+image: "Chain_Animation184.png" COMP;
+image: "Chain_Animation185.png" COMP;
+image: "Chain_Animation186.png" COMP;
+image: "Chain_Animation187.png" COMP;
+image: "Chain_Animation188.png" COMP;
+image: "Chain_Animation189.png" COMP;
+image: "Chain_Animation190.png" COMP;
+image: "Chain_Animation191.png" COMP;
+image: "Chain_Animation192.png" COMP;
+image: "Chain_Animation193.png" COMP;
+
+      
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	        relative: 0.00 0.00;
+	        offset: 0 0;
+	        }
+	       rel2 {
+			relative: 1.00 1.00;
+			offset: -1 -1;
+		    }	
+	   		image {
+				normal: "Chain_Animation01.png";
+		          }		
+	   	       }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+        }
+		rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+		
+	    image {
+normal: "Chain_Animation01.png";
+tween, "Chain_Animation02.png";
+tween, "Chain_Animation03.png";
+tween, "Chain_Animation04.png";
+tween, "Chain_Animation05.png";
+tween, "Chain_Animation06.png";
+tween, "Chain_Animation07.png";
+tween, "Chain_Animation08.png";
+tween, "Chain_Animation09.png";
+tween, "Chain_Animation10.png";
+tween, "Chain_Animation11.png";
+tween, "Chain_Animation12.png";
+tween, "Chain_Animation13.png";
+tween, "Chain_Animation14.png";
+tween, "Chain_Animation15.png";
+tween, "Chain_Animation16.png";
+tween, "Chain_Animation17.png";
+tween, "Chain_Animation18.png";
+tween, "Chain_Animation19.png";
+tween, "Chain_Animation20.png";
+tween, "Chain_Animation21.png";
+tween, "Chain_Animation22.png";
+tween, "Chain_Animation23.png";
+tween, "Chain_Animation24.png";
+tween, "Chain_Animation25.png";
+tween, "Chain_Animation26.png";
+tween, "Chain_Animation27.png";
+tween, "Chain_Animation28.png";
+tween, "Chain_Animation29.png";
+tween, "Chain_Animation30.png";
+tween, "Chain_Animation31.png";
+tween, "Chain_Animation32.png";
+tween, "Chain_Animation33.png";
+tween, "Chain_Animation34.png";
+tween, "Chain_Animation35.png";
+tween, "Chain_Animation36.png";
+tween, "Chain_Animation37.png";
+tween, "Chain_Animation38.png";
+tween, "Chain_Animation39.png";
+tween, "Chain_Animation40.png";
+tween, "Chain_Animation41.png";
+tween, "Chain_Animation42.png";
+tween, "Chain_Animation43.png";
+tween, "Chain_Animation44.png";
+tween, "Chain_Animation45.png";
+tween, "Chain_Animation46.png";
+tween, "Chain_Animation47.png";
+tween, "Chain_Animation48.png";
+tween, "Chain_Animation49.png";
+tween, "Chain_Animation50.png";
+tween, "Chain_Animation51.png";
+tween, "Chain_Animation52.png";
+tween, "Chain_Animation53.png";
+tween, "Chain_Animation54.png";
+tween, "Chain_Animation55.png";
+tween, "Chain_Animation56.png";
+tween, "Chain_Animation57.png";
+tween, "Chain_Animation58.png";
+tween, "Chain_Animation59.png";
+tween, "Chain_Animation60.png";
+tween, "Chain_Animation61.png";
+tween, "Chain_Animation62.png";
+tween, "Chain_Animation63.png";
+tween, "Chain_Animation64.png";
+tween, "Chain_Animation65.png";
+tween, "Chain_Animation66.png";
+tween, "Chain_Animation67.png";
+tween, "Chain_Animation68.png";
+tween, "Chain_Animation69.png";
+tween, "Chain_Animation70.png";
+tween, "Chain_Animation71.png";
+tween, "Chain_Animation72.png";
+tween, "Chain_Animation73.png";
+tween, "Chain_Animation74.png";
+tween, "Chain_Animation75.png";
+tween, "Chain_Animation76.png";
+tween, "Chain_Animation77.png";
+tween, "Chain_Animation78.png";
+tween, "Chain_Animation79.png";
+tween, "Chain_Animation80.png";
+tween, "Chain_Animation81.png";
+tween, "Chain_Animation82.png";
+tween, "Chain_Animation83.png";
+tween, "Chain_Animation84.png";
+tween, "Chain_Animation85.png";
+tween, "Chain_Animation86.png";
+tween, "Chain_Animation87.png";
+tween, "Chain_Animation88.png";
+tween, "Chain_Animation89.png";
+tween, "Chain_Animation90.png";
+tween, "Chain_Animation91.png";
+tween, "Chain_Animation92.png";
+tween, "Chain_Animation93.png";
+tween, "Chain_Animation94.png";
+tween, "Chain_Animation95.png";
+tween, "Chain_Animation96.png";
+tween, "Chain_Animation97.png";
+tween, "Chain_Animation98.png";
+tween, "Chain_Animation99.png";
+tween, "Chain_Animation100.png";
+tween, "Chain_Animation101.png";
+tween, "Chain_Animation102.png";
+tween, "Chain_Animation103.png";
+tween, "Chain_Animation104.png";
+tween, "Chain_Animation105.png";
+tween, "Chain_Animation106.png";
+tween, "Chain_Animation107.png";
+tween, "Chain_Animation108.png";
+tween, "Chain_Animation109.png";
+tween, "Chain_Animation110.png";
+tween, "Chain_Animation111.png";
+tween, "Chain_Animation112.png";
+tween, "Chain_Animation113.png";
+tween, "Chain_Animation114.png";
+tween, "Chain_Animation115.png";
+tween, "Chain_Animation116.png";
+tween, "Chain_Animation117.png";
+tween, "Chain_Animation118.png";
+tween, "Chain_Animation119.png";
+tween, "Chain_Animation120.png";
+tween, "Chain_Animation121.png";
+tween, "Chain_Animation122.png";
+tween, "Chain_Animation123.png";
+tween, "Chain_Animation124.png";
+tween, "Chain_Animation125.png";
+tween, "Chain_Animation126.png";
+tween, "Chain_Animation127.png";
+tween, "Chain_Animation128.png";
+tween, "Chain_Animation129.png";
+tween, "Chain_Animation130.png";
+tween, "Chain_Animation131.png";
+tween, "Chain_Animation132.png";
+tween, "Chain_Animation133.png";
+tween, "Chain_Animation134.png";
+tween, "Chain_Animation135.png";
+tween, "Chain_Animation136.png";
+tween, "Chain_Animation137.png";
+tween, "Chain_Animation138.png";
+tween, "Chain_Animation139.png";
+tween, "Chain_Animation140.png";
+tween, "Chain_Animation141.png";
+tween, "Chain_Animation142.png";
+tween, "Chain_Animation143.png";
+tween, "Chain_Animation144.png";
+tween, "Chain_Animation145.png";
+tween, "Chain_Animation146.png";
+tween, "Chain_Animation147.png";
+tween, "Chain_Animation148.png";
+tween, "Chain_Animation149.png";
+tween, "Chain_Animation150.png";
+tween, "Chain_Animation151.png";
+tween, "Chain_Animation152.png";
+tween, "Chain_Animation153.png";
+tween, "Chain_Animation154.png";
+tween, "Chain_Animation155.png";
+tween, "Chain_Animation156.png";
+tween, "Chain_Animation157.png";
+tween, "Chain_Animation158.png";
+tween, "Chain_Animation159.png";
+tween, "Chain_Animation160.png";
+tween, "Chain_Animation161.png";
+tween, "Chain_Animation162.png";
+tween, "Chain_Animation163.png";
+tween, "Chain_Animation164.png";
+tween, "Chain_Animation165.png";
+tween, "Chain_Animation166.png";
+tween, "Chain_Animation167.png";
+tween, "Chain_Animation168.png";
+tween, "Chain_Animation169.png";
+tween, "Chain_Animation170.png";
+tween, "Chain_Animation171.png";
+tween, "Chain_Animation172.png";
+tween, "Chain_Animation173.png";
+tween, "Chain_Animation174.png";
+tween, "Chain_Animation175.png";
+tween, "Chain_Animation176.png";
+tween, "Chain_Animation177.png";
+tween, "Chain_Animation178.png";
+tween, "Chain_Animation179.png";
+tween, "Chain_Animation180.png";
+tween, "Chain_Animation181.png";
+tween, "Chain_Animation182.png";
+tween, "Chain_Animation183.png";
+tween, "Chain_Animation184.png";
+tween, "Chain_Animation185.png";
+tween, "Chain_Animation186.png";
+tween, "Chain_Animation187.png";
+tween, "Chain_Animation188.png";
+tween, "Chain_Animation189.png";
+tween, "Chain_Animation190.png";
+tween, "Chain_Animation191.png";
+tween, "Chain_Animation192.png";
+tween, "Chain_Animation193.png";
+
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 16.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
