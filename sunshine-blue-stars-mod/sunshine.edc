@@ -1,0 +1,1289 @@
+// Title:   Sunshine
+// Author:  Chrisripp <hybryde.org> PclinuxOS User 
+// Create with Enventor 1.0
+
+
+#define FRAME LOSSY 60
+
+images 
+{
+   image: "bg.png" COMP;
+   image: "e17_logo_small.png" COMP;
+   image: "planet_glow.png" COMP;
+   image: "sun_glow.png" COMP;
+   image: "planet_black.png" COMP;
+   image: "space_glow.png" COMP;
+   image: "space2.png" COMP;
+   image: "start.png"     COMP;
+   image: "comet.png"     COMP;
+}
+
+collections {
+   group {
+      /* TODO: Please replace embedded image files to your application image files. */
+      name: "e/desktop/background";
+      parts {
+         part {
+            name: "background_image";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+
+               rel1 {
+                  relative: 0.00 0.00;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: -1 -1;
+               }	
+               image {
+                  normal: "bg.png";
+               }		
+            }
+         }
+  // --------FOND PLANET ---------
+         part {
+            name: "planet1";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+
+               rel1 {
+                  relative: 0.00 0.00;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: -1 -1;
+               }	
+               image {
+                  normal: "space2.png";
+               } 
+            }		
+         }
+         // LOGO -----sun_glow.png---------
+         part {
+            name: "sun_glow";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+               aspect: 1 1;
+               aspect_preference: BOTH;
+               map.on: 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.3913 0.4360;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.5413 0.5860;;
+                  offset: 0 0;
+               }	
+               image {
+                  normal: "sun_glow.png";
+               } 
+            }	
+            desc { "zoom";
+               inherit: "default";
+               map {
+                  zoom.x: 0.25;
+                  zoom.y: 0.25;
+               }
+            }	
+         }
+
+// LOGO -----E---------
+         part {
+            name: "logo";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.00;
+               min:        63 63;
+               max:        63 63;
+               visible: 1;
+               aspect: 1 1;
+               aspect_preference: BOTH;
+               map.on: 1;
+               map.rotation.z: 0;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.3913 0.4360;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.5413 0.5860;;
+                  offset: 0 0;
+               }	
+               image {
+                  normal: "e17_logo_small.png";
+               } 
+            }	
+            desc { "rotated";
+               inherit: "default";
+               map.rotation.z: 360;
+            }
+         }   	
+
+
+// --------SPACE GLOW ---------        
+         part {
+            name: "space_glow";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 0;
+               visible: 1;
+          //     aspect: 1 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.61;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 0.80;
+                  offset: 0 0;
+               }	
+               image {
+                  normal: "space_glow.png";
+               } 
+            }	
+            description {
+               state: "shown" 0.0;
+               color: 255 255 255 225;
+               visible: 1;
+          //     aspect: 1 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.61;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 0.80;
+                  offset: 0 0;
+               }	
+               image {
+                  normal: "space_glow.png";
+               } 
+            }		 
+         }
+         // --------------- STARS -----------------       
+         part {
+            name: "start0";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.1 0.0;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.1 0.0;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 1-------------------
+         part {
+            name: "start1";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.9 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0 0.0;
+                  offset:     0   0;
+
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.9 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 2-------------------
+
+         part {
+            name: "start2";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.1 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.1 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 3-------------------
+         part {
+            name: "start3";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.4 0.1;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.4 0.1;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 4-------------------
+
+
+
+         part {
+            name: "start4";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.3 0.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.3 0.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+// --------------- COMET-------------------
+
+
+
+
+         part {
+            name: "cometa";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  1.0 0.0;
+               color: 255 255 255 255;
+               min: 26 24;
+               max: 26 24;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "comet.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.1 1.0;
+               color: 255 255 255 0;
+               min: 26 24;
+               max: 26 24;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "comet.png";
+               }
+            }
+         }
+
+
+
+// --------------- STAR 5-------------------
+
+
+         part {
+            name: "start5";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.3 0.3;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.3 0.3;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+// --------------- STAR 6-------------------
+
+
+
+         part {
+            name: "start6";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.7.2 0.2.2;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.7.2 0.2.2;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+// --------------- STAR 7-------------------
+
+
+         part {
+            name: "start7";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.7 0.1.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.7 0.1.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 8-------------------
+
+
+         part {
+            name: "start8";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.5.5 0.0.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.5.5 0.0.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+// --------------- STAR 9-------------------
+
+         part {
+            name: "start9";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.6.6 0.1.0;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.6.6 0.1.0;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+// --------------- STAR 10-------------------
+
+
+
+         part {
+            name: "start10";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.2.5 0.1.9;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.2.5 0.1.9;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+
+
+
+// --------------- STAR 11-------------------
+
+         part {
+            name: "start11";
+            mouse_events:  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               align:  0.9.9 0.1.5;
+               color: 255 255 255 255;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+
+            description {
+               state:    "shown" 0.0;
+               align:    0.9.9 0.1.5;
+               color: 255 255 255 0;
+               min: 17 18;
+               max: 17 18;
+               rel1 {
+                  to: "background_image"; 
+                  relative: 0.0  0.0;
+                  offset:   0    0;
+               }
+               rel2 {
+                  to: "background_image";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "start.png";
+               }
+            }
+         }
+         // --------PLANET BLACK ---------        
+         part {
+            name: "planet_black";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+               //aspect: 1 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.72;
+                  offset: 0 30;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: 0 30;
+               }	
+               image {
+                  normal: "planet_black.png";
+               } 
+            }		
+         }
+// --------PLANET GLOW ---------        
+         part {
+            name: "planet_glow";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+               //aspect: 1 1;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.72;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: 0 0;
+               }	
+               image {
+                  normal: "planet_glow.png";
+               } 
+            }		
+         }
+      }
+  // ----fin de parts-------
+ // ---------------PROGRAM---------------------     
+ //-------------ROTATION LOGO -----------------
+      programs {
+         program { "load";
+            signal: "load";
+            source: "";
+            action: STATE_SET "rotated";
+            target: "logo";
+            transition: LINEAR 30;
+            after: "reset";
+         }
+         program { "reset";
+            action: STATE_SET "default";
+            target: "logo";
+            after: "load";
+         }
+  //--------------------------------------------           
+//------------- ZOOM SUN GLOW------------------        
+         program { "anim1";
+            signal: "load";
+            action: STATE_SET "zoom";
+            target: "sun_glow";
+            transition: ACCELERATE 20;
+            after: "anim2";
+         }
+         program { "anim2";
+            action: STATE_SET "default";
+            target: "sun_glow";
+            transition: ACCELERATE 20.0;
+            after: "anim1";
+         }
+//-----------------------------------------------
+//---------- FADE IN-OUT SPACE GLOW--------------         
+         program 
+         {
+            name: "init";
+            signal: "load";
+            source: "";
+            after: "1_fade_in";
+            after: "1_fade_out";
+         }
+
+         program 
+         {
+            name:    "1_fade_in";
+            signal:  "";
+            source:  "";
+            action:  STATE_SET "shown" 0.0;
+            target:  "space_glow";
+            transition: LINEAR 20;
+            after:   "1_fade_in";
+            after:	 "1_fade_out";
+         }
+
+         program
+         {
+            name:    "1_fade_out";
+            signal:  "";
+            source:  "";
+            action:  STATE_SET "default" 0.0;
+            target:  "space_glow";
+            transition: ACCELERATE 20;
+            after:   "1_fade_in";
+         }
+//-----------------------------------------------
+//------------------ Stars ----------------------
+         program 
+         {
+            name: "init-stars";
+            signal: "load";
+            source: "";
+            after: "show-star0";
+            after: "no-star0";
+            after: "show-star1";
+            after: "no-star1";
+            after: "show-star2";
+            after: "no-star2";
+            after: "show-star3";
+            after: "no-star3";
+            after: "show-star4";
+            after: "no-star4";
+            after: "show-star5";
+            after: "no-star5";
+            after: "show-star6";
+            after: "no-star6";
+            after: "show-star7";
+            after: "no-star7";
+            after: "show-star8";
+            after: "no-star8";
+            after: "show-star9";
+            after: "no-star9";
+            after: "show-star10";
+            after: "no-star10";
+            after: "show-star11";
+            after: "no-star11";
+         }
+//-----------------STAR 0-----------------------         
+         program {
+            name:	"show-star0";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start0";
+            transition: DECELERATE 3.0;
+            after: "no-star0";
+
+         }
+
+         program {
+            name:	"no-star0";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start0";
+            transition: DECELERATE 4.5;
+            after: "show-star0";
+         }
+
+// // --------------- STAR 1-------------------
+
+         program {
+            name:	"show-star1";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start1";
+            transition: DECELERATE 5.5;
+            after: "no-star1";
+
+         }
+
+         program {
+            name:	"no-star1";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start1";
+            transition: DECELERATE 3.0;
+            after: "show-star1";
+         }
+
+// --------------- STAR 2-------------------
+
+
+         program {
+            name:	"show-star2";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start2";
+            transition: DECELERATE 5.5;
+            after: "no-star2";
+
+         }
+
+         program {
+            name:	"no-star2";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start2";
+            transition: DECELERATE 3.0;
+            after: "show-star2";
+         }
+// --------------- STAR 3-------------------
+
+         program {
+            name:	"show-star3";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start3";
+            transition: DECELERATE 7.5;
+            after: "no-star3";
+
+         }
+
+         program {
+            name:	"no-star3";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start3";
+            transition: DECELERATE 5.2;
+            after: "show-star3";
+         }
+
+// --------------- STAR 4-------------------
+
+         program {
+            name:	"show-star4";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start4";
+            transition: DECELERATE 7.5;
+            after: "no-star4";
+
+         }
+
+         program {
+            name:	"no-star4";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start4";
+            transition: DECELERATE 4.2;
+            after: "show-star4";
+         }
+
+// --------------- COMET-------------------
+
+         program {
+            name:	"si-cometa";
+            signal:	"show";
+            action: STATE_SET "shown" 0.0;
+            target: "cometa";
+            transition: DECELERATE 30.0;
+            after: "no-cometa";
+
+         }
+
+         program {
+            name:	"no-cometa";
+            action: STATE_SET "default" 0.0;
+            target: "cometa";
+            transition: DECELERATE 0.0;
+            after: "si-cometa";
+         }
+
+
+// --------------- STAR 5-------------------
+
+
+
+         program {
+            name:	"show-star5";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start5";
+            transition: DECELERATE 10.5;
+            after: "no-star5";
+
+         }
+
+         program {
+            name:	"no-star5";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start5";
+            transition: DECELERATE 3.2;
+            after: "show-star5";
+         }
+
+
+// --------------- STAR 6-------------------
+
+
+
+         program {
+            name:	"show-star6";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start6";
+            transition: DECELERATE 11.5;
+            after: "no-star6";
+
+         }
+
+         program {
+            name:	"no-star6";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start6";
+            transition: DECELERATE 5.2;
+            after: "show-star6";
+         }
+
+// --------------- STAR 7-------------------
+
+
+         program {
+            name:	"show-star7";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start7";
+            transition: DECELERATE 11.5;
+            after: "no-star7";
+
+         }
+
+         program {
+            name:	"no-star7";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start7";
+            transition: DECELERATE 5.2;
+            after: "show-star7";
+         }
+
+
+
+// --------------- STAR 8-------------------
+
+
+         program {
+            name:	"show-star8";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start8";
+            transition: DECELERATE 13.7;
+            after: "no-star8";
+
+         }
+
+         program {
+            name:	"no-star8";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start8";
+            transition: DECELERATE 4.8;
+            after: "show-star8";
+         }
+
+// --------------- STAR 9-------------------
+
+         program {
+            name:	"show-star9";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start9";
+            transition: DECELERATE 10.5;
+            after: "no-star9";
+
+         }
+
+         program {
+            name:	"no-star9";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start9";
+            transition: DECELERATE 4.5;
+            after: "show-star9";
+         }
+
+
+// --------------- STAR 10-------------------
+
+
+         program {
+            name:	"show-star10";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start10";
+            transition: DECELERATE 3.7;
+            after: "no-star10";
+
+         }
+
+         program {
+            name:	"no-star10";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start10";
+            transition: DECELERATE 4.8;
+            after: "show-star10";
+         }
+
+// --------------- STAR 11-------------------
+
+
+         program {
+            name:	"show-star11";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "shown" 0.0;
+            target: "start11";
+            transition: DECELERATE 13.7;
+            after: "no-star11";
+
+         }
+
+         program {
+            name:	"no-star11";
+            source: "background_image";
+            action: STATE_SET "default" 0.0;
+            target: "start11";
+            transition: DECELERATE 4.8;
+            after: "show-star11";
+         }
+
+//-----------------------------------------------
+      } //fin progs
+
+   }
+}
+
