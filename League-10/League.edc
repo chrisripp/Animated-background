@@ -1,0 +1,178 @@
+// Title:   League
+// Author:  Chrisripp Pclinux User 
+// League- loop animation, ffmpeg -i your.mov yourfile%02d.png
+
+
+#define FRAME LOSSY 60
+images {
+   
+//   image: "background.png" FRAME;
+
+image: "League-1.png" COMP; 
+image: "League-2.png" COMP;
+image: "League-3.png" COMP;
+image: "League-4.png" COMP;
+image: "League-5.png" COMP;
+image: "League-6.png" COMP;
+image: "League-7.png" COMP;
+image: "League-8.png" COMP;
+image: "League-9.png" COMP;
+image: "League-10.png" COMP;
+image: "League-11.png" COMP;
+image: "League-12.png" COMP;
+image: "League-13.png" COMP;
+image: "League-14.png" COMP;
+image: "League-15.png" COMP;
+image: "League-16.png" COMP;
+image: "League-17.png" COMP;
+image: "League-18.png" COMP;
+image: "League-19.png" COMP;
+image: "League-20.png" COMP;
+image: "League-21.png" COMP;
+image: "League-22.png" COMP;
+image: "League-23.png" COMP;
+image: "League-24.png" COMP;
+image: "League-25.png" COMP;
+image: "League-26.png" COMP;
+image: "League-27.png" COMP;
+image: "League-28.png" COMP;
+image: "League-29.png" COMP;
+image: "League-30.png" COMP;
+image: "League-31.png" COMP;
+image: "League-32.png" COMP;
+image: "League-33.png" COMP;
+image: "League-34.png" COMP;
+image: "League-35.png" COMP;
+image: "League-36.png" COMP;
+image: "League-37.png" COMP;
+image: "League-38.png" COMP;
+image: "League-39.png" COMP;
+image: "League-40.png" COMP;
+image: "League-41.png" COMP;
+image: "League-42.png" COMP;
+image: "League-43.png" COMP;
+image: "League-44.png" COMP;
+image: "League-45.png" COMP;
+image: "League-46.png" COMP;
+image: "League-47.png" COMP;
+image: "League-48.png" COMP;
+image: "League-49.png" COMP;
+image: "League-50.png" COMP;
+
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	        relative: 0.00 0.00;
+	        offset: 0 0;
+	        }
+	       rel2 {
+			relative: 1.00 1.00;
+			offset: -1 -1;
+		    }	
+	   		image {
+				normal: "League-1.png";
+		          }		
+	   	       }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+        }
+		rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+		
+	    image {
+normal: "League-1.png";
+tween, "League-2.png";
+tween, "League-3.png";
+tween, "League-4.png";
+tween, "League-5.png";
+tween, "League-6.png";
+tween, "League-7.png";
+tween, "League-8.png";
+tween, "League-9.png";
+tween, "League-10.png";
+tween, "League-11.png";
+tween, "League-12.png";
+tween, "League-13.png";
+tween, "League-14.png";
+tween, "League-15.png";
+tween, "League-16.png";
+tween, "League-17.png";
+tween, "League-18.png";
+tween, "League-19.png";
+tween, "League-20.png";
+tween, "League-21.png";
+tween, "League-22.png";
+tween, "League-23.png";
+tween, "League-24.png";
+tween, "League-25.png";
+tween, "League-26.png";
+tween, "League-27.png";
+tween, "League-28.png";
+tween, "League-29.png";
+tween, "League-30.png";
+tween, "League-31.png";
+tween, "League-32.png";
+tween, "League-33.png";
+tween, "League-34.png";
+tween, "League-35.png";
+tween, "League-36.png";
+tween, "League-37.png";
+tween, "League-38.png";
+tween, "League-39.png";
+tween, "League-40.png";
+tween, "League-41.png";
+tween, "League-42.png";
+tween, "League-43.png";
+tween, "League-44.png";
+tween, "League-45.png";
+tween, "League-46.png";
+tween, "League-47.png";
+tween, "League-48.png";
+tween, "League-49.png";
+tween, "League-50.png";
+
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 10.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
