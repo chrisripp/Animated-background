@@ -1,0 +1,44 @@
+#define BG_GROUP "e/desktop/"
+
+images 
+{
+   image: "bg.png" COMP;
+   image: "lips.png" COMP;
+}
+
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+     {
+	part 
+	  {
+	     name: "bg";
+	     mouse_events: 0;
+	     description 
+	       {
+		  state: "default" 0.0;
+		  image.normal: "bg.png";
+	       }
+	  }
+	part 
+	  {
+	     name: "e";
+	     mouse_events: 1;
+	     description 
+	       {
+		  state: "default" 0.0;
+		  min: 287 282;
+		  max: 287 282;
+		  image.normal: "lips.png";
+	       }
+              dragable { 
+               //confine: background; 
+               x: 1 1 1; 
+               y: 1 1 1; 
+            } 
+	  }
+
+     }
+}

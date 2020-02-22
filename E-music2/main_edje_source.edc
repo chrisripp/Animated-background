@@ -1,0 +1,216 @@
+images {
+   // image "filename.png" STORAGE_MEOTHD [option to storage method];
+   // STORAGE_METHOD can be:
+   // COMP = compressed, no loss
+   // RAW = uncompressed, no loss
+   // LOSSY = compressed with quality loss, next param is quality level (0-100)
+   image, "bg.png"  COMP;       
+   image, "icon.png" COMP;       
+   image, "c2.png"  COMP;        
+   image, "c3.png"  COMP;  
+   image, "girl_pose2.png"  COMP;  
+
+}
+
+collections {
+   group {
+      /* TODO: Please replace embedded image files to your application image files. */
+      images {
+         image: "ENVENTOR_EMBEDDED_IMAGE.png" COMP;
+      }
+      name, "e/desktop/background";
+     max: 1920  1200;
+     min: 640  480;
+      
+      parts {
+	 /* BACKGROUND */
+         part {
+            name,          "background";
+            mouse_events,  1;
+            
+            description {
+             state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               image {
+                  normal, "bg.png";
+               }
+               fill {
+                  smooth, 0;
+               }
+            }
+         }
+	 /* bubbles1 */
+         part {
+            name,          "cloud_2";
+            mouse_events,  0;
+            description {
+               state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.47083 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "c2.png";
+               }
+            }
+            description {
+               state,    "drift" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 1.47083 0.0;
+                     offset,   0 0;
+                  }
+                  size {
+                     relative,   1.47083 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "c2.png";
+               }
+            }
+         }
+ /* GIRL */
+	image { "girl";
+            scale: 1;
+            desc { "default";
+               visible: 1;
+               /* TODO: Please replace embedded image files to your application image files. */
+               image.normal: "girl_pose2.png";
+               //aspect: 1 1;
+               align: 0.5 0.5;
+               rel1.relative: 0.1962 0.1987;
+               rel2.relative: 0.7862 0.7887;
+            }
+         }
+	 /* bubbles2 */
+         part {
+            name,          "cloud_3";
+            mouse_events,  0;
+            description {
+               state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.86667 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "c3.png";
+               }
+            }
+            description {
+               state,    "drift" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 1.86667 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.86667 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "c3.png";
+               }
+            }
+         }
+       }
+      programs {
+         program {
+            name,       "anim_1_cloud_2";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 65.0;
+            target,     "cloud_2";
+            after,      "anim_2_cloud_2";
+         }
+         program {
+            name,       "anim_2_cloud_2";
+            signal,     "NONE";
+            source,     "NONE";
+            action,     STATE_SET "default" 0.0;
+            target,     "cloud_2";
+            after,      "anim_1_cloud_2";
+         }
+
+         program {
+            name,       "anim_1_cloud_3";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 55.0;
+            target,     "cloud_3";
+            after,      "anim_2_cloud_3";
+         }
+         program {
+            name,       "anim_2_cloud_3";
+            signal,     "";
+            source,     "";
+            action,     STATE_SET "default" 0.0;
+            target,     "cloud_3";
+            after,      "anim_1_cloud_3";
+         }
+      }
+   }
+}
