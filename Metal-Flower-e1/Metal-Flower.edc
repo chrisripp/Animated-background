@@ -1,0 +1,406 @@
+images {
+   image: "boule0000.png" COMP;
+   image: "boule0001.png" COMP;
+   image: "boule0002.png" COMP;
+   image: "boule0003.png" COMP;
+   image: "boule0004.png" COMP;
+   image: "boule0005.png" COMP;
+   image: "boule0006.png" COMP;
+   image: "boule0007.png" COMP;
+   image: "boule0008.png" COMP;
+   image: "boule0009.png" COMP;
+   image: "boule0010.png" COMP;
+   image: "boule0011.png" COMP;
+   image: "boule0012.png" COMP;
+   image: "boule0013.png" COMP;
+   image: "boule0014.png" COMP;
+   image: "boule0015.png" COMP;
+   image: "boule0016.png" COMP;
+   image: "boule0017.png" COMP;
+   image: "boule0018.png" COMP;
+   image: "boule0019.png" COMP;
+   image: "boule0020.png" COMP;
+   image: "boule0021.png" COMP;
+   image: "boule0022.png" COMP;
+   image: "boule0023.png" COMP;
+   image: "boule0024.png" COMP;
+   image: "boule0025.png" COMP;
+   image: "boule0026.png" COMP;
+   image: "boule0027.png" COMP;
+   image: "boule0028.png" COMP;
+   image: "boule0029.png" COMP;
+   //
+ //  image: "E0000.png" COMP;
+   //
+   image: "fleurs0000.png" COMP;
+   image: "fleurs0001.png" COMP;
+   image: "fleurs0002.png" COMP;
+   image: "fleurs0003.png" COMP;
+   image: "fleurs0004.png" COMP;
+   image: "fleurs0005.png" COMP;
+   image: "fleurs0006.png" COMP;
+   image: "fleurs0007.png" COMP;
+   image: "fleurs0008.png" COMP;
+   image: "fleurs0009.png" COMP;
+   image: "fleurs0010.png" COMP;
+   image: "fleurs0011.png" COMP;
+   image: "fleurs0012.png" COMP;
+   image: "fleurs0013.png" COMP;
+   image: "fleurs0014.png" COMP;
+   image: "fleurs0015.png" COMP;
+   image: "fleurs0016.png" COMP;
+   image: "fleurs0017.png" COMP;
+   image: "fleurs0018.png" COMP;
+   image: "fleurs0019.png" COMP;
+   image: "fleurs0020.png" COMP;
+   image: "fleurs0021.png" COMP;
+   image: "fleurs0022.png" COMP;
+   image: "fleurs0023.png" COMP;
+   image: "fleurs0024.png" COMP;
+   image: "fleurs0025.png" COMP;
+   image: "fleurs0026.png" COMP;
+   image: "fleurs0027.png" COMP;
+   image: "fleurs0028.png" COMP;
+   image: "fleurs0029.png" COMP;
+   image: "fleurs0030.png" COMP;
+   image: "fleurs0031.png" COMP;
+   image: "fleurs0032.png" COMP;
+   image: "fleurs0033.png" COMP;
+   image: "fleurs0034.png" COMP;
+   image: "fleurs0035.png" COMP;
+   image: "fleurs0036.png" COMP;
+   image: "fleurs0037.png" COMP;
+   image: "fleurs0038.png" COMP;
+   image: "fleurs0039.png" COMP;
+   image: "fleurs0040.png" COMP;
+   image: "fleurs0041.png" COMP;
+   image: "fleurs0042.png" COMP;
+   image: "fleurs0043.png" COMP;
+   image: "fleurs0044.png" COMP;
+   image: "fleurs0045.png" COMP;
+   image: "fleurs0046.png" COMP;
+   image: "fleurs0047.png" COMP;
+   image: "fleurs0048.png" COMP;
+   image: "fleurs0049.png" COMP;
+   //
+   image: "bg.png" COMP;
+   //
+   image: "bouton.png" COMP;
+
+}
+collections {
+   group {
+      name: "e/desktop/background";
+      min: 640 480;
+      max: 1920 1200;
+      parts {
+         part {
+            name: "bg";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+              min: 640 480;
+               max: 1920 1200;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+               image {
+                  normal: "bg.png";
+               }
+               visible: 1;
+            }
+         }
+         //ANIM FLOWER
+         part {
+            name: "anim";
+            scale: 1;
+            description {
+               state:    "default" 0.0;
+               min: 340 292;
+               max: 1048 877;
+               rel1 {
+                  relative: 0.455 0.28;
+                offset: 0 0;
+               }
+               rel2 {
+                  to: "bg";
+                  relative: 1.0  1.0;
+                  offset:   -1    -1;
+               }
+               image {
+                  normal: "fleurs0000.png";
+                  tween: "fleurs0001.png";
+                  tween: "fleurs0002.png";
+                  tween: "fleurs0003.png";
+                  tween: "fleurs0004.png";
+                  tween: "fleurs0005.png";
+                  tween: "fleurs0006.png";
+                  tween: "fleurs0007.png";
+                  tween: "fleurs0008.png";
+                  tween: "fleurs0009.png";
+                  tween: "fleurs0010.png";
+                  tween: "fleurs0011.png";
+                  tween: "fleurs0012.png";
+                  tween: "fleurs0013.png";
+                  tween: "fleurs0014.png";
+                  tween: "fleurs0015.png";
+                  tween: "fleurs0016.png";
+                  tween: "fleurs0017.png";
+                  tween: "fleurs0018.png";
+                  tween: "fleurs0019.png";
+                  tween: "fleurs0020.png";
+                  tween: "fleurs0021.png";
+                  tween: "fleurs0022.png";
+                  tween: "fleurs0023.png";
+                  tween: "fleurs0024.png";
+                  tween: "fleurs0025.png";
+                  tween: "fleurs0026.png";
+                  tween: "fleurs0027.png";
+                  tween: "fleurs0028.png";
+                  tween: "fleurs0029.png";
+                  tween: "fleurs0030.png";
+                  tween: "fleurs0031.png";
+                  tween: "fleurs0032.png";
+                  tween: "fleurs0033.png";
+                  tween: "fleurs0034.png";
+                  tween: "fleurs0035.png";
+                  tween: "fleurs0036.png";
+                  tween: "fleurs0037.png";
+                  tween: "fleurs0038.png";
+                  tween: "fleurs0039.png";
+                  tween: "fleurs0040.png";
+                  tween: "fleurs0041.png";
+                  tween: "fleurs0042.png";
+                  tween: "fleurs0043.png";
+                  tween: "fleurs0044.png";
+                  tween: "fleurs0045.png";
+                  tween: "fleurs0046.png";
+                  tween: "fleurs0047.png";
+                  tween: "fleurs0048.png";
+                  tween: "fleurs0049.png";
+                  tween: "fleurs0048.png";
+                  tween: "fleurs0047.png";
+                  tween: "fleurs0046.png";
+                  tween: "fleurs0045.png";
+                  tween: "fleurs0044.png";
+                  tween: "fleurs0043.png";
+                  tween: "fleurs0042.png";
+                  tween: "fleurs0041.png";
+                  tween: "fleurs0040.png";
+                  tween: "fleurs0039.png";
+                  tween: "fleurs0038.png";
+                  tween: "fleurs0037.png";
+                  tween: "fleurs0036.png";
+                  tween: "fleurs0035.png";
+                  tween: "fleurs0034.png";
+                  tween: "fleurs0033.png";
+                  tween: "fleurs0032.png";
+                  tween: "fleurs0031.png";
+                  tween: "fleurs0030.png";
+                  tween: "fleurs0029.png";
+                  tween: "fleurs0028.png";
+                  tween: "fleurs0027.png";
+                  tween: "fleurs0026.png";
+                  tween: "fleurs0025.png";
+                  tween: "fleurs0024.png";
+                  tween: "fleurs0023.png";
+                  tween: "fleurs0022.png";
+                  tween: "fleurs0021.png";
+                  tween: "fleurs0020.png";
+                  tween: "fleurs0019.png";
+                  tween: "fleurs0018.png";
+                  tween: "fleurs0017.png";
+                  tween: "fleurs0016.png";
+                  tween: "fleurs0015.png";
+                  tween: "fleurs0014.png";
+                  tween: "fleurs0013.png";
+                  tween: "fleurs0012.png";
+                  tween: "fleurs0011.png";
+                  tween: "fleurs0010.png";
+                  tween: "fleurs0009.png";
+                  tween: "fleurs0008.png";
+                  tween: "fleurs0007.png";
+                  tween: "fleurs0006.png";
+                  tween: "fleurs0005.png";
+                  tween: "fleurs0004.png";
+                  tween: "fleurs0003.png";
+                  tween: "fleurs0002.png";
+               }
+            }
+         }      
+    /*     part {
+            name: "E0000";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 378 423;
+               max: 378 423;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 548 273;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 926 696;
+               }
+               image {
+                  normal: "E0000.png";
+               }
+               visible: 1;
+            }
+         } */
+         // BOULE
+         part {
+            name: "boule";
+            type: IMAGE;
+            mouse_events: 0;
+            scale:1;
+            description {
+               state: "default" 0.0;
+               min: 173 210;
+               max: 520 631;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  to: "bg";
+                  relative: 0.3  0.6;
+                  offset:   0   0;
+               }
+               image {
+                  normal: "boule0000.png";
+                  tween: "boule0001.png" ;
+                  tween: "boule0002.png" ;
+                  tween: "boule0003.png" ;
+                  tween: "boule0004.png" ;
+                  tween: "boule0005.png" ;
+                  tween: "boule0006.png" ;
+                  tween: "boule0007.png" ;
+                  tween: "boule0008.png" ;
+                  tween: "boule0009.png" ;
+                  tween: "boule0010.png" ;
+                  tween: "boule0011.png" ;
+                  tween: "boule0012.png" ;
+                  tween: "boule0013.png" ;
+                  tween: "boule0014.png" ;
+                  tween: "boule0015.png" ;
+                  tween: "boule0016.png" ;
+                  tween: "boule0017.png" ;
+                  tween: "boule0018.png" ;
+                  tween: "boule0019.png" ;
+                  tween: "boule0020.png" ;
+                  tween: "boule0021.png" ;
+                  tween: "boule0022.png" ;
+                  tween: "boule0023.png" ;
+                  tween: "boule0024.png" ;
+                  tween: "boule0025.png" ;
+                  tween: "boule0026.png" ;
+                  tween: "boule0027.png" ;
+                  tween: "boule0028.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0029.png" ;
+                  tween: "boule0028.png" ;
+                  tween: "boule0027.png" ;
+                  tween: "boule0026.png" ;
+                  tween: "boule0025.png" ;
+                  tween: "boule0024.png" ;
+                  tween: "boule0023.png" ;
+                  tween: "boule0022.png" ;
+                  tween: "boule0021.png" ;
+                  tween: "boule0020.png" ;
+                  tween: "boule0019.png" ;
+                  tween: "boule0018.png" ;
+                  tween: "boule0017.png" ;
+                  tween: "boule0016.png" ;
+                  tween: "boule0015.png" ;
+                  tween: "boule0014.png" ;
+                  tween: "boule0013.png" ;
+                  tween: "boule0012.png" ;
+                  tween: "boule0011.png" ;
+                  tween: "boule0010.png" ;
+                  tween: "boule0009.png" ;
+                  tween: "boule0008.png" ;
+                  tween: "boule0007.png" ;
+                  tween: "boule0006.png" ;
+                  tween: "boule0005.png" ;
+                  tween: "boule0004.png" ;
+                  tween: "boule0003.png" ;
+                  tween: "boule0002.png" ;
+                  tween: "boule0001.png" ;
+               }
+               visible: 1;
+            }
+         }
+         // BOUTON ANIM BOULE
+         part {
+            name: "button";
+            type: IMAGE;
+            mouse_events: 1;
+            description {
+               state: "default" 0.0;
+               min: 173 210;
+               max: 520 631;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 520 631;
+               }
+               image {
+                  normal: "bouton.png";
+               }     
+
+            }
+         }
+      }
+      programs {
+         program {
+            name: "anim_rotator";
+            signal: "load";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            transition: LINEAR 9.0;
+            target: "anim";
+            after: "anim_rotator";
+         }
+         program {
+            name: "anim_boule";
+            signal: "button.in";
+            source: "";
+            action: STATE_SET "button" 0.0;
+            transition: LINEAR 16.0;
+            target: "boule";
+            after: "anim_boule";
+         }
+         program {
+            name:"button.in";
+            signal:"mouse,in";
+            source: "button";
+            action: STATE_SET "default" 0.0;
+            target: "boule";
+            transition: DECELERATE 5.0;
+            after:"anim_boule";
+         }
+      }
+
+   }
+}
