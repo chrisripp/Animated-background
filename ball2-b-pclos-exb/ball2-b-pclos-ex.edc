@@ -1,0 +1,143 @@
+#define smoothValue 0
+
+// Images definition
+images 
+{
+    image: "ball2-0.png" LOSSY 80;
+    image: "ball2-10.png" LOSSY 80;
+    image: "ball2-11.png" LOSSY 80;
+    image: "ball2-12.png" LOSSY 80;
+    image: "ball2-13.png" LOSSY 80;
+    image: "ball2-14.png" LOSSY 80;
+    image: "ball2-15.png" LOSSY 80;
+    image: "ball2-16.png" LOSSY 80;
+    image: "ball2-17.png" LOSSY 80;
+    image: "ball2-18.png" LOSSY 80;
+    image: "ball2-19.png" LOSSY 80;
+    image: "ball2-1.png" LOSSY 80;
+    image: "ball2-2.png" LOSSY 80;
+    image: "ball2-3.png" LOSSY 80;
+    image: "ball2-4.png" LOSSY 80;
+    image: "ball2-5.png" LOSSY 80;
+    image: "ball2-6.png" LOSSY 80;
+    image: "ball2-7.png" LOSSY 80;
+    image: "ball2-8.png" LOSSY 80;
+    image: "ball2-9.png" LOSSY 80;
+     image: "button.png" LOSSY 80;
+}
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+         part {
+            name: "background_image";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+
+             image {
+		     normal: "ball2-0.png";
+               }		
+            }
+         }
+
+
+         part {
+            name: "anim";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state:    "default" 0.0;
+               min: 0 0;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.00;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: -1 -1;
+               }	
+                    image {
+                        normal: "ball2-0.png";
+                        tween:  "ball2-1.png";
+                        tween:  "ball2-2.png";
+                        tween:  "ball2-3.png";
+                        tween:  "ball2-4.png";
+                        tween:  "ball2-5.png";
+                        tween:  "ball2-6.png";
+                        tween:  "ball2-7.png";
+                        tween:  "ball2-8.png";
+                        tween:  "ball2-9.png";
+			tween:  "ball2-10.png";
+                        tween:  "ball2-11.png";
+                        tween:  "ball2-12.png";
+                        tween:  "ball2-13.png";
+                        tween:  "ball2-14.png";
+                        tween:  "ball2-15.png";
+                        tween:  "ball2-16.png";
+                        tween:  "ball2-17.png";
+                        tween:  "ball2-18.png";
+                        tween:  "ball2-19.png";
+                                             
+                    }
+                }
+            }
+
+          part {
+            name: "button";
+            type: IMAGE;
+        // image { "button";
+            mouse_events: 1;
+            scale: 1;
+            desc { "dfault";
+	    min: 40 40;
+	    max: 50 50;
+	        align: 0.5 0.5;
+              //fixed: 0 0;
+              // min: 0 0;
+               visible: 1;
+                //aspect: 1 1;
+               //rel1.relative: 0.92 0.30;
+	       //rel2.relative: 0.97 0.38;
+	       //changes button position
+	       rel1.relative: 0.5 0.5;
+               rel2.relative: 0.5. 0.5;
+               image {
+                  normal: "button.png";
+               }
+            }
+         }
+      }
+
+      programs {
+         program {
+            name: "anim_rotator";
+            signal: "button.in";
+            source: "";
+            action: STATE_SET "button" 0.0;
+            transition: LINEAR 5.0;
+            target: "anim";
+            after: "anim_rotator";
+}
+         program {
+            name:"button.in";
+            signal:"mouse,in";
+            source: "button";
+            action: STATE_SET "default" 0.0;
+            target: "anim";
+           // transition: DECELERATE 16.0;
+	    transition:    LINEAR 
+2;
+            after:"anim_rotator";
+         }
+      }
+   }
+}
+
+
+            
