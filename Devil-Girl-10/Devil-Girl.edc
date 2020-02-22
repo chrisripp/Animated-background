@@ -1,0 +1,279 @@
+// Title:   Devil-Girl
+// Author:  Chrisripp Pclinux User 
+// Devil-Girl- loop animation, ffmpeg -i your.mov yourfile%02d.png
+
+
+#define FRAME LOSSY 60
+images {
+   
+//   image: "background.png" FRAME;
+
+image: "Devil-Girl-1.png" COMP; 
+image: "Devil-Girl-2.png" COMP;
+image: "Devil-Girl-3.png" COMP;
+image: "Devil-Girl-4.png" COMP;
+image: "Devil-Girl-5.png" COMP;
+image: "Devil-Girl-6.png" COMP;
+image: "Devil-Girl-7.png" COMP;
+image: "Devil-Girl-8.png" COMP;
+image: "Devil-Girl-9.png" COMP;
+image: "Devil-Girl-10.png" COMP;
+image: "Devil-Girl-11.png" COMP;
+image: "Devil-Girl-12.png" COMP;
+image: "Devil-Girl-13.png" COMP;
+image: "Devil-Girl-14.png" COMP;
+image: "Devil-Girl-15.png" COMP;
+image: "Devil-Girl-16.png" COMP;
+image: "Devil-Girl-17.png" COMP;
+image: "Devil-Girl-18.png" COMP;
+image: "Devil-Girl-19.png" COMP;
+image: "Devil-Girl-20.png" COMP;
+image: "Devil-Girl-21.png" COMP;
+image: "Devil-Girl-22.png" COMP;
+image: "Devil-Girl-23.png" COMP;
+image: "Devil-Girl-24.png" COMP;
+image: "Devil-Girl-25.png" COMP;
+image: "Devil-Girl-26.png" COMP;
+image: "Devil-Girl-27.png" COMP;
+image: "Devil-Girl-28.png" COMP;
+image: "Devil-Girl-29.png" COMP;
+image: "Devil-Girl-30.png" COMP;
+image: "Devil-Girl-31.png" COMP;
+image: "Devil-Girl-32.png" COMP;
+image: "Devil-Girl-33.png" COMP;
+image: "Devil-Girl-34.png" COMP;
+image: "Devil-Girl-35.png" COMP;
+image: "Devil-Girl-36.png" COMP;
+image: "Devil-Girl-37.png" COMP;
+image: "Devil-Girl-38.png" COMP;
+image: "Devil-Girl-39.png" COMP;
+image: "Devil-Girl-40.png" COMP;
+image: "Devil-Girl-41.png" COMP;
+image: "Devil-Girl-42.png" COMP;
+image: "Devil-Girl-43.png" COMP;
+image: "Devil-Girl-44.png" COMP;
+image: "Devil-Girl-45.png" COMP;
+image: "Devil-Girl-46.png" COMP;
+image: "Devil-Girl-47.png" COMP;
+image: "Devil-Girl-48.png" COMP;
+image: "Devil-Girl-49.png" COMP;
+image: "Devil-Girl-50.png" COMP;
+image: "Devil-Girl-51.png" COMP;
+image: "Devil-Girl-52.png" COMP;
+image: "Devil-Girl-53.png" COMP;
+image: "Devil-Girl-54.png" COMP;
+image: "Devil-Girl-55.png" COMP;
+image: "Devil-Girl-56.png" COMP;
+image: "Devil-Girl-57.png" COMP;
+image: "Devil-Girl-58.png" COMP;
+image: "Devil-Girl-59.png" COMP;
+image: "Devil-Girl-60.png" COMP;
+image: "Devil-Girl-61.png" COMP;
+image: "Devil-Girl-62.png" COMP;
+image: "Devil-Girl-63.png" COMP;
+image: "Devil-Girl-64.png" COMP;
+image: "Devil-Girl-65.png" COMP;
+image: "Devil-Girl-66.png" COMP;
+image: "Devil-Girl-67.png" COMP;
+image: "Devil-Girl-68.png" COMP;
+image: "Devil-Girl-69.png" COMP;
+image: "Devil-Girl-70.png" COMP;
+image: "Devil-Girl-71.png" COMP;
+image: "Devil-Girl-72.png" COMP;
+image: "Devil-Girl-73.png" COMP;
+image: "Devil-Girl-74.png" COMP;
+image: "Devil-Girl-75.png" COMP;
+image: "Devil-Girl-76.png" COMP;
+image: "Devil-Girl-77.png" COMP;
+image: "Devil-Girl-78.png" COMP;
+image: "Devil-Girl-79.png" COMP;
+image: "Devil-Girl-80.png" COMP;
+image: "Devil-Girl-81.png" COMP;
+image: "Devil-Girl-82.png" COMP;
+image: "Devil-Girl-83.png" COMP;
+image: "Devil-Girl-84.png" COMP;
+image: "Devil-Girl-85.png" COMP;
+image: "Devil-Girl-86.png" COMP;
+image: "Devil-Girl-87.png" COMP;
+image: "Devil-Girl-88.png" COMP;
+image: "Devil-Girl-89.png" COMP;
+image: "Devil-Girl-90.png" COMP;
+image: "Devil-Girl-91.png" COMP;
+image: "Devil-Girl-92.png" COMP;
+image: "Devil-Girl-93.png" COMP;
+image: "Devil-Girl-94.png" COMP;
+image: "Devil-Girl-95.png" COMP;
+image: "Devil-Girl-96.png" COMP;
+image: "Devil-Girl-97.png" COMP;
+image: "Devil-Girl-98.png" COMP;
+image: "Devil-Girl-99.png" COMP;
+image: "Devil-Girl-100.png" COMP;
+
+      
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	        relative: 0.00 0.00;
+	        offset: 0 0;
+	        }
+	       rel2 {
+			relative: 1.00 1.00;
+			offset: -1 -1;
+		    }	
+	   		image {
+				normal: "Devil-Girl-1.png";
+		          }		
+	   	       }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+        }
+		rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+		
+	    image {
+normal: "Devil-Girl-1.png";
+tween, "Devil-Girl-2.png";
+tween, "Devil-Girl-3.png";
+tween, "Devil-Girl-4.png";
+tween, "Devil-Girl-5.png";
+tween, "Devil-Girl-6.png";
+tween, "Devil-Girl-7.png";
+tween, "Devil-Girl-8.png";
+tween, "Devil-Girl-9.png";
+tween, "Devil-Girl-10.png";
+tween, "Devil-Girl-11.png";
+tween, "Devil-Girl-12.png";
+tween, "Devil-Girl-13.png";
+tween, "Devil-Girl-14.png";
+tween, "Devil-Girl-15.png";
+tween, "Devil-Girl-16.png";
+tween, "Devil-Girl-17.png";
+tween, "Devil-Girl-18.png";
+tween, "Devil-Girl-19.png";
+tween, "Devil-Girl-20.png";
+tween, "Devil-Girl-21.png";
+tween, "Devil-Girl-22.png";
+tween, "Devil-Girl-23.png";
+tween, "Devil-Girl-24.png";
+tween, "Devil-Girl-25.png";
+tween, "Devil-Girl-26.png";
+tween, "Devil-Girl-27.png";
+tween, "Devil-Girl-28.png";
+tween, "Devil-Girl-29.png";
+tween, "Devil-Girl-30.png";
+tween, "Devil-Girl-31.png";
+tween, "Devil-Girl-32.png";
+tween, "Devil-Girl-33.png";
+tween, "Devil-Girl-34.png";
+tween, "Devil-Girl-35.png";
+tween, "Devil-Girl-36.png";
+tween, "Devil-Girl-37.png";
+tween, "Devil-Girl-38.png";
+tween, "Devil-Girl-39.png";
+tween, "Devil-Girl-40.png";
+tween, "Devil-Girl-41.png";
+tween, "Devil-Girl-42.png";
+tween, "Devil-Girl-43.png";
+tween, "Devil-Girl-44.png";
+tween, "Devil-Girl-45.png";
+tween, "Devil-Girl-46.png";
+tween, "Devil-Girl-47.png";
+tween, "Devil-Girl-48.png";
+tween, "Devil-Girl-49.png";
+tween, "Devil-Girl-50.png";
+tween, "Devil-Girl-51.png";
+tween, "Devil-Girl-52.png";
+tween, "Devil-Girl-53.png";
+tween, "Devil-Girl-54.png";
+tween, "Devil-Girl-55.png";
+tween, "Devil-Girl-56.png";
+tween, "Devil-Girl-57.png";
+tween, "Devil-Girl-58.png";
+tween, "Devil-Girl-59.png";
+tween, "Devil-Girl-60.png";
+tween, "Devil-Girl-61.png";
+tween, "Devil-Girl-62.png";
+tween, "Devil-Girl-63.png";
+tween, "Devil-Girl-64.png";
+tween, "Devil-Girl-65.png";
+tween, "Devil-Girl-66.png";
+tween, "Devil-Girl-67.png";
+tween, "Devil-Girl-68.png";
+tween, "Devil-Girl-69.png";
+tween, "Devil-Girl-70.png";
+tween, "Devil-Girl-71.png";
+tween, "Devil-Girl-72.png";
+tween, "Devil-Girl-73.png";
+tween, "Devil-Girl-74.png";
+tween, "Devil-Girl-75.png";
+tween, "Devil-Girl-76.png";
+tween, "Devil-Girl-77.png";
+tween, "Devil-Girl-78.png";
+tween, "Devil-Girl-79.png";
+tween, "Devil-Girl-80.png";
+tween, "Devil-Girl-81.png";
+tween, "Devil-Girl-82.png";
+tween, "Devil-Girl-83.png";
+tween, "Devil-Girl-84.png";
+tween, "Devil-Girl-85.png";
+tween, "Devil-Girl-86.png";
+tween, "Devil-Girl-87.png";
+tween, "Devil-Girl-88.png";
+tween, "Devil-Girl-89.png";
+tween, "Devil-Girl-90.png";
+tween, "Devil-Girl-91.png";
+tween, "Devil-Girl-92.png";
+tween, "Devil-Girl-93.png";
+tween, "Devil-Girl-94.png";
+tween, "Devil-Girl-95.png";
+tween, "Devil-Girl-96.png";
+tween, "Devil-Girl-97.png";
+tween, "Devil-Girl-98.png";
+tween, "Devil-Girl-99.png";
+tween, "Devil-Girl-100.png";
+		
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 10.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
