@@ -1,0 +1,309 @@
+
+images {
+   /* TODO: Please replace embedded image files to your application image files. */
+   image: "bg.jpg"         LOSSY 80;
+   image: "grass.png"         LOSSY 60;
+   image: "bull.png"         LOSSY 60;
+   image: "moon.png"         LOSSY 60;
+   image: "p1.jpg"         LOSSY 60;
+   image: "p2.jpeg"         LOSSY 60;
+   image: "p3.jpeg"         LOSSY 60;
+   image: "p4.jpeg"         LOSSY 60;
+   image: "p6.jpeg"         LOSSY 60;
+   image: "p7.jpeg"         LOSSY 60;
+}
+collections {
+ //--------------------- SOUNDS--------------------  
+   sounds {
+      sample {
+         name: "sound_name1" RAW;
+         source: "p1.wav";
+      }
+
+   }
+   sounds {
+      sample {
+         name: "sound_name2" RAW;
+         source: "p2.wav";
+      }
+
+   }
+   group {
+      name: "e/desktop/background";
+      max: 1920 1080;
+      parts {
+         part {
+            name: "background_image";
+            mouse_events,  1;
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  offset: -1 -1;
+               }
+               image {
+                  normal: "bg.jpg";
+               }
+            }
+         }
+//------------------POCHETTES DE DISQUES--------------------------      
+         part   {
+            name: "p1";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 225 225;
+               max: 225 225;
+               image.normal: "p1.jpg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+         part   {
+            name: "p2";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 225 225;
+               max: 225 225;
+               image.normal: "p2.jpeg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+         part   {
+            name: "p3";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 225 225;
+               max: 225 225;
+               image.normal: "p3.jpeg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+         part   {
+            name: "p4";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 211 211;
+               max: 211 211;
+               image.normal: "p4.jpeg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+         part   {
+            name: "p6";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 225 225;
+               max: 225 225;
+               image.normal: "p6.jpeg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+         part   {
+            name: "p7";
+            mouse_events: 1;
+            description        {
+               state: "default" 0.0;
+               min: 225 225;
+               max: 225 225;
+               image.normal: "p7.jpeg";
+            }
+            dragable {
+               //confine: background;
+               x: 1 1 1;
+               y: 1 1 1;
+            }
+         }
+//-----------------BULL-----------------------------         
+         part {
+            name: "bull";
+            mouse_events,  0;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               align: 0.5 0.5;
+               fixed: 0 0;
+               min: 0 0;
+               max: 800 491;
+               //aspect: 1 1;
+               rel1 {
+                  relative: 0.0 0.3 ;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 1.3;
+                  offset: -1 -1;
+               }
+               image {
+                  normal: "bull.png";
+               }
+            }
+         }
+ //---------------------GRASS----------------------        
+         part {
+            name: "grass";
+            mouse_events,  1;
+            type: IMAGE;
+            description {
+               state: "default" 0.0;
+               min: 0 0;
+               max: 3000 150;
+               //aspect: 1 1;
+               rel1 {
+                  relative: 0.0 0.1 ;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.0 1.8;
+                  offset: -1 -1;
+               }
+
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1. 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal: "grass.png";
+               }
+            }
+         }
+ //------------------------WINDOW SAMPLE--------------------        
+
+   //      part {
+   //         name: "sample_bg";
+   //         type: RECT;
+   //         mouse_events: 1;
+   //         description {
+   //            state: "default" 0.0;
+  //             min: 300 150;
+   //            max: 300 150;
+   //            color: 200 200 200 100;
+   //            align: 0.5 0.0;
+   //            rel1 {
+   //               relative: 0.0 0.0;
+   //            }
+   //         }
+  //       }
+  //------------------TEXT SAMPLE---------------------------
+  //       part {
+  //          name: "sample_text";
+   //         type: TEXT;
+   //         mouse_events: 1;
+   //         repeat_events: 1;
+  //          description {
+  //             state: "default" 0.0;
+   //            rel1.to: "sample_bg";
+  //             rel2.to: "sample_bg";
+   //            text {
+   //               font: "Sans";
+   //               size: 20;
+  //                text: "Play Sound Sample";
+   //            }
+   //         }
+   //      }
+ //-------------------WINDOW Tone ------------------        
+      //   part {
+      //      name: "tone_bg";
+      //      type: RECT;
+      //      mouse_events: 1;
+      //      description {
+      //         state: "default" 0.0;
+      //         min: 300 150;
+     //          max: 300 150;
+      //         align: 0.5 0.0;
+      //         color: 180 180 180 100;
+     //          rel1 {
+      //            relative: 0.0 1.0;
+       //           to: "sample_bg";
+       //        }
+       //     }
+       //  }
+ //--------------------TEXT TONE ---------------------         
+      //   part {
+      //      name: "tone_text";
+       //     type: TEXT;
+      //      mouse_events: 1;
+      //      repeat_events: 1;
+      //      description {
+     //          state: "default" 0.0;
+     //          rel1.to: "tone_bg";
+      //         rel2.to: "tone_bg";
+      //         text {
+      //            font: "Sans";
+     //             size: 20;
+    //              text: "Play Tone";
+     //          }
+
+
+ //------------------PROGRAMES------------    
+
+         programs {
+ //-----------------PROG SAMPLE -----------       
+         //         program {
+          //           name: "click_sample1";
+           //          signal: "mouse,down,1";
+           //          source: "p1";
+           //          action: PLAY_SAMPLE "sound_name1" 1.0;
+           //       }
+            program {
+               name: "click_sample1";
+               signal: "mouse,down,1";
+               source: "p1";
+               action: PLAY_SAMPLE "sound_name2" 1.0;
+            }
+ // -----------------PROG TONE -------------                 
+
+
+            program {
+               name: "click_sample2";
+               signal: "mouse,down,1";
+               source: "p2";
+               action: ACTION_STOP;
+               target: "click_sample1";
+
+            }
+
+
+ //-------------------------------------------        
+         }
+      }
+   }
+

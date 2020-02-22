@@ -1,0 +1,215 @@
+// Title:   Rain
+// Author:  Chrisripp <hybryde.org>
+
+#define FRAME LOSSY 40
+images {
+   /* TODO: Please replace embedded image files to your application image files. */
+   image: "1.png" COMP;
+   image: "2.png" COMP;
+   image: "3.png" COMP;
+   image: "4.png" COMP;
+   image: "5.png" COMP;
+   image: "6.png" COMP;
+   image: "7.png" COMP;
+   image: "8.png" COMP;
+   image: "9.png" COMP;
+   image: "10.png" COMP;
+   image: "11.png" COMP;
+   image: "12.png" COMP;
+   image: "13.png" COMP;
+   image: "14.png" COMP;
+   image: "15.png" COMP;
+   image: "16.png" COMP;
+   image: "17.png" COMP;
+   image: "18.png" COMP;
+   image: "19.png" COMP;
+   image: "20.png" COMP;
+   image: "21.png" COMP;
+   image: "22.png" COMP;
+   image: "23.png" COMP;
+   image: "24.png" COMP;
+   image: "25.png" COMP;
+   image: "26.png" COMP;
+   image: "27.png" COMP;
+   image: "28.png" COMP;
+   image: "29.png" COMP;
+   image: "30.png" COMP;
+   image: "31.png" COMP;
+   image: "32.png" COMP;
+   image: "33.png" COMP;
+   image: "34.png" COMP;
+   image: "35.png" COMP;
+   image: "36.png" COMP;
+   image: "37.png" COMP;
+   image: "38.png" COMP;
+   image: "39.png" COMP;
+   image: "40.png" COMP;
+   image: "41.png" COMP;
+   image: "42.png" COMP;
+   image: "43.png" COMP;
+   image: "44.png" COMP;
+   image: "45.png" COMP;
+   image: "46.png" COMP;
+   image: "47.png" COMP;
+   image: "48.png" COMP;
+   image: "49.png" COMP;
+   image: "50.png" COMP;
+   image: "51.png" COMP;
+   image: "52.png" COMP;
+   image: "53.png" COMP;
+   image: "54.png" COMP;
+   image: "55.png" COMP;
+   image: "56.png" COMP;
+   image: "57.png" COMP;
+   image: "58.png" COMP;
+   image: "59.png" COMP;
+   image: "60.png" COMP;
+   image: "61.png" COMP;
+   image: "62.png" COMP;
+   image: "63.png" COMP;
+   image: "64.png" COMP;
+   image: "65.png" COMP;
+   image: "66.png" COMP;
+   image: "67.png" COMP;
+   image: "68.png" COMP;
+   image: "69.png" COMP;
+   image: "70.png" COMP;
+   image: "71.png" COMP;
+   image: "72.png" COMP;
+   image: "73.png" COMP;
+   image: "74.png" COMP;
+   image: "75.png" COMP;
+   image: "fille.png" COMP;
+
+}
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+         part {
+            name: "background_image";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state: "default" 0.00;
+               visible: 1;
+
+               image {
+                  normal: "fille.png";
+               }		
+            }
+         }
+
+
+         part {
+            name: "anim";
+            type: IMAGE;
+            mouse_events: 0;
+            scale: 1;
+            description {
+               state:    "default" 0.0;
+               min: 0 0;
+               align: 0.5 0.5;
+               rel1 {
+                  relative: 0.00 0.00;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 1.00 1.00;
+                  offset: -1 -1;
+               }	
+
+               image {
+                  normal: "1.png";
+                  tween: "2.png";
+                  tween: "3.png";
+                  tween: "4.png";
+                  tween: "5.png";
+                  tween: "6.png";
+                  tween: "7.png";
+                  tween: "8.png";
+                  tween: "9.png";
+                  tween: "10.png";
+                  tween: "11.png";
+                  tween: "12.png";
+                  tween: "13.png";
+                  tween: "14.png";
+                  tween: "15.png";
+                  tween: "16.png";
+                  tween: "17.png";
+                  tween: "18.png";
+                  tween: "19.png";
+                  tween: "20.png";
+                  tween: "21.png";
+                  tween: "22.png";
+                  tween: "23.png";
+                  tween: "24.png";
+                  tween: "25.png";
+                  tween: "26.png";
+                  tween: "27.png";
+                  tween: "28.png";
+                  tween: "29.png";
+                  tween: "30.png";
+                  tween: "31.png";
+                  tween: "32.png";
+                  tween: "33.png";
+                  tween: "34.png";
+                  tween: "35.png";
+                  tween: "36.png";
+                  tween: "37.png";
+                  tween: "38.png";
+                  tween: "39.png";
+                  tween: "40.png";
+                  tween: "41.png";
+                  tween: "42.png";
+                  tween: "43.png";
+                  tween: "44.png";
+                  tween: "45.png";
+                  tween: "46.png";
+                  tween: "47.png";
+                  tween: "48.png";
+                  tween: "49.png";
+                  tween: "50.png";
+                  tween: "51.png";
+                  tween: "52.png";
+                  tween: "53.png";
+                  tween: "54.png";
+                  tween: "55.png";
+                  tween: "56.png";
+                  tween: "57.png";
+                  tween: "58.png";
+                  tween: "59.png";
+                  tween: "60.png";
+                  tween: "61.png";
+                  tween: "62.png";
+                  tween: "63.png";
+                  tween: "64.png";
+                  tween: "65.png";
+                  tween: "66.png";
+                  tween: "67.png";
+                  tween: "67.png";
+                  tween: "69.png";
+                  tween: "70.png";
+                  tween: "71.png";
+                  tween: "72.png";
+                  tween: "73.png";
+                  tween: "74.png";
+                  tween: "75.png";
+
+               }
+            }
+         }
+       
+      programs {
+         program { "tween_anim";
+            signal: "load";
+            action: STATE_SET "default";
+            transition: LINEAR 9;
+            target: "anim";
+            after: "tween_anim";
+         }
+      }
+   }
+}
+
