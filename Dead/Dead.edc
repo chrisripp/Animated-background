@@ -1,0 +1,130 @@
+// Title:   Dead
+// Author:  Chrisripp Pclinux User 
+// Dead_Animation loop animation, ffmpeg -i your.mov yourfile%02d.png
+
+
+#define FRAME LOSSY 60
+images {
+   
+//   image: "background.png" FRAME;
+
+image: "Dead-1.png" COMP; 
+image: "Dead-2.png" COMP;
+image: "Dead-3.png" COMP;
+image: "Dead-4.png" COMP;
+image: "Dead-5.png" COMP;
+image: "Dead-6.png" COMP;
+image: "Dead-7.png" COMP;
+image: "Dead-8.png" COMP;
+image: "Dead-9.png" COMP;
+image: "Dead-10.png" COMP;
+image: "Dead-11.png" COMP;
+image: "Dead-12.png" COMP;
+image: "Dead-13.png" COMP;
+image: "Dead-14.png" COMP;
+image: "Dead-15.png" COMP;
+image: "Dead-16.png" COMP;
+image: "Dead-17.png" COMP;
+image: "Dead-18.png" COMP;
+image: "Dead-19.png" COMP;
+image: "Dead-20.png" COMP;
+image: "Dead-21.png" COMP;
+image: "Dead-22.png" COMP;
+image: "Dead-23.png" COMP;
+image: "Dead-24.png" COMP;
+image: "Dead-25.png" COMP;
+
+
+      
+   }
+
+collections {
+   group {
+      name: "e/desktop/background";
+      parts {
+	 part {
+	    name: "background_image";
+	    type: IMAGE;
+	    mouse_events: 0;
+	    description {
+	    state: "default" 0.00;
+	    visible: 1;
+	       
+	       rel1 {
+	        relative: 0.00 0.00;
+	        offset: 0 0;
+	        }
+	       rel2 {
+			relative: 1.00 1.00;
+			offset: -1 -1;
+		    }	
+	   		image {
+				normal: "Dead-1.png";
+		          }		
+	   	       }
+           }
+		
+
+	 part {
+	    name: "anim";
+	    description {
+	    state:    "default" 0.0;
+	    min: 1920 1200;
+	    max: 1920 1200;
+          //  align: 0.5 0.5;
+	   
+	    rel1 {
+			relative: 0.5 0.0;
+			offset: 0 -50;
+        }
+		rel2 {
+		
+ 			relative: 0.5 1.0;
+			offset: 0 -50;
+		}
+		
+	    image {
+normal: "Dead-1.png";
+tween, "Dead-2.png";
+tween, "Dead-3.png";
+tween, "Dead-4.png";
+tween, "Dead-5.png";
+tween, "Dead-6.png";
+tween, "Dead-7.png";
+tween, "Dead-8.png";
+tween, "Dead-9.png";
+tween, "Dead-10.png";
+tween, "Dead-11.png";
+tween, "Dead-12.png";
+tween, "Dead-13.png";
+tween, "Dead-14.png";
+tween, "Dead-15.png";
+tween, "Dead-16.png";
+tween, "Dead-17.png";
+tween, "Dead-18.png";
+tween, "Dead-19.png";
+tween, "Dead-20.png";
+tween, "Dead-21.png";
+tween, "Dead-22.png";
+tween, "Dead-23.png";
+tween, "Dead-24.png";
+tween, "Dead-25.png";
+		
+	       }
+	    }
+	}
+     }
+
+		programs {
+			program {
+				name: "anim_rotator";
+				signal: "show";
+				source: "";
+				action: STATE_SET "default" 0.0;
+				transition: LINEAR 5.0;
+				target: "anim";
+				after: "anim_rotator";
+			}
+		}
+	}
+}
