@@ -1,0 +1,206 @@
+/* Background Orange Theme
+  Make with Enventor on E23*/
+
+
+
+images {
+   // image "filename.png" STORAGE_MEOTHD [option to storage method];
+   // STORAGE_METHOD can be:
+   // COMP = compressed, no loss
+   // RAW = uncompressed, no loss
+   // LOSSY = compressed with quality loss, next param is quality level (0-100)
+   image: "bg.png"  COMP;       
+   image: "cloud1.png" COMP;
+   image: "cloud2.png"  COMP;        
+   image: "nappe-cloud.png"  COMP;  
+   image: "stars.png"  COMP;  
+   image: "stars.png"  COMP;
+
+}
+
+collections {
+   group {
+      name, "e/desktop/background";
+      max: 1920  1200;
+      min: 640  480;
+
+      parts {
+	 /* BACKGROUND */
+         part {
+            name,          "background";
+            mouse_events,  1;
+
+            description {
+               state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               image {
+                  normal, "bg.png";
+               }
+               fill {
+                  smooth, 0;
+               }
+            }
+         }
+	 /* Cloud2 */
+         part {
+            name,          "cloud2";
+            mouse_events,  0;
+            description {
+               state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.47083 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "cloud2.png";
+               }
+            }
+            description {
+               state,    "drift" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 1.47083 0.0;
+                     offset,   0 0;
+                  }
+                  size {
+                     relative,   1.47083 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "cloud2.png";
+               }
+            }
+         }
+
+	 /* Cloud1 */
+         part {
+            name,          "cloud1";
+            mouse_events,  0;
+            description {
+               state,    "default" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.86667 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "cloud1.png";
+               }
+            }
+            description {
+               state,    "drift" 0.0;
+//	       aspect,   1.5 1.5;
+               rel1 {
+                  relative, 0.0  0.0;
+                  offset,   0   0;
+               }
+               rel2 {
+                  relative, 1.0  1.0;
+                  offset,   -1   -1;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 1.86667 0.0;
+                     offset,   0   0;
+                  }
+                  size {
+                     relative,   1.86667 1.0;
+                     offset,     0 0;
+                  }
+               }
+               image {
+                  normal, "cloud1.png";
+               }
+            }
+         }
+      }
+      programs {
+         program {
+            name,       "anim_1_cloud_2";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 65.0;
+            target,     "cloud2";
+            after,      "anim_2_cloud_2";
+         }
+         program {
+            name,       "anim_2_cloud_2";
+            signal,     "NONE";
+            source,     "NONE";
+            action,     STATE_SET "default" 0.0;
+            target,     "cloud2";
+            after,      "anim_1_cloud_2";
+         }
+
+         program {
+            name,       "anim_1_cloud_3";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 55.0;
+            target,     "cloud1";
+            after,      "anim_2_cloud_3";
+         }
+         program {
+            name,       "anim_2_cloud_3";
+            signal,     "";
+            source,     "";
+            action,     STATE_SET "default" 0.0;
+            target,     "cloud1";
+            after,      "anim_1_cloud_3";
+         }
+      }
+   }
+}
