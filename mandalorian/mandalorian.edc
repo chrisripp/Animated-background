@@ -1,0 +1,420 @@
+
+// Title:   Mandalorian 
+// Author:  Triki1/Chrisripp
+// License: Released under Creative Commons Attribution 2.5
+
+
+// Collection d'images du fond d'écran non compressées.
+// options d'images possible:
+// COMP = non compressé pas de perte
+// RAW = non compressé pas de perte
+// LOSSY = compression avec perte de qualité de (0-100)
+images {
+   image: "perso_malan.png" COMP;
+   image: "ship.png" COMP;
+   image: "imperial.png" COMP;
+   image: "tie_fighter.png" COMP;
+   image: "flare.png" COMP;
+   image: "yoda.png" COMP;
+   image: "background.png" COMP;
+
+}
+collections {
+   group {
+      name: "e/desktop/background"; // on indique a E que c'est un fond d'écran.
+      // Dimension du fond d'écran
+      min: 1920 1080;
+      max: 1920 1080;
+      parts {
+         part {
+            name: "background";
+            type: IMAGE;
+            mouse_events: 0; // aucunes interaction avec la sourie
+           // scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 1920 1080;
+               max: 1920 1080;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 1920 1080;
+               }
+               image {
+                  normal: "background.png";
+               }
+               visible: 1;
+            }
+         }
+ //--------------------- Yoda -------------------------        
+         part {
+            name: "yoda";
+            type: IMAGE;
+            mouse_events: 0;
+           // scale: 1;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 100;
+               min: 772 939;
+               max: 772 939;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 1273 138;
+               }
+               rel2 {
+                  to: "background";  
+                  relative: 0.0 0.0;
+                  offset: 2045 1077;
+               }
+               image {
+                  normal: "yoda.png";
+               }
+               visible: 0;
+            }
+            description {
+               state: "cache" 0.0;
+               color: 255 255 255 0;
+               min: 772 939;
+               max: 772 939;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 1273 138;
+               }
+               rel2 {
+                  to: "background";  
+                  relative: 0.0 0.0;
+                  offset: 2045 1077;
+               }
+               image {
+                  normal: "yoda.png";
+               }
+               visible: 1;
+            }
+         }
+ //--------------------- Flare -------------------------          
+         part {
+            name: "flare";
+            type: IMAGE;
+            mouse_events: 1;
+           // scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 325 328;
+               max: 325 328;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 1720 138;
+               }
+               rel2 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2045 466;
+               }
+               image {
+                  normal: "flare.png";
+               }
+               visible: 1;
+            }
+
+         }
+ //--------------------- Tie-fighter -------------------------          
+         part {
+            name: "tie_fighter";
+            type: IMAGE;
+            mouse_events: 0;
+           // scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 86 68;
+               max: 86 68;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 406;
+               }
+               rel2 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 471;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   3   406;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "tie_fighter.png";
+               }
+               visible: 1;
+            }
+            description {
+               state,    "drift" 0.0;
+               min: 86 68;
+               max: 86 68;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 403;
+               }
+               rel2 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 471;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   3  410;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "tie_fighter.png";
+               }
+               visible: 1;
+            }
+         }
+ //--------------------- imperial -------------------------          
+         part {
+            name: "imperial";
+            type: IMAGE;
+            mouse_events: 0;
+            //scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 423 155;
+               max: 423 155;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 205;
+               }
+               rel2 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 360;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset:  3  160;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "imperial.png";
+               }
+               visible: 1;
+            }
+            description {
+               state: "drift" 0.0;
+               min: 423 155;
+               max: 423 155;
+               rel1 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 205; //dépassement de l'écran sur la droite 2500
+               }
+               rel2 {
+                  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 360; //dépassement de l'écran sur la droite 2500
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset:   0  160;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "imperial.png";
+               }
+               visible: 1;
+            }
+         }
+ //--------------------- Ship -------------------------          
+         part {
+            name: "ship";
+            type: IMAGE;
+            mouse_events: 0;
+            //scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 274 142;
+               max: 274 142;
+               rel1 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 570;
+               }
+               rel2 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 0 718;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   3   570;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "ship.png";
+               }
+               visible: 1;
+            }
+            description {
+               state: "drift" 0.0;
+               min: 274 142;
+               max: 274 142;
+               rel1 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 570;
+               }
+               rel2 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 2500 718;
+               }
+               fill {
+                  smooth, 0;
+                  origin {
+                     relative, 0.0 0.0;
+                     offset,   3   570;
+                  }
+               }
+               color: 255 255 255 255;
+               image {
+                  normal: "ship.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "perso_malan";
+            type: IMAGE;
+            mouse_events: 0;
+            //scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 537 650;
+               max: 537 650;
+               rel1 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 789 349;
+               }
+               rel2 {
+				  to: "background"; 
+                  relative: 0.0 0.0;
+                  offset: 1326 999;
+               }
+               image {
+                  normal: "perso_malan.png";
+               }
+               visible: 1;
+            }
+         }
+         // ********  Programs  ******  Programas  *******************
+
+//*****************************0******************************
+programs {
+         program {
+            name:	"yoda-visible";
+            signal:	"show";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "yoda";
+            transition: DECELERATE 30.5;
+            after: "yoda-pas-visible";
+
+         }
+
+         program {
+            name:	"yoda-pas-visible";
+            signal:	"";
+            source: "background";
+            action: STATE_SET "cache" 0.0;
+            target: "yoda";
+            transition: DECELERATE 30.5;
+            after: "yoda-visible";
+         }
+
+// *****************************1*******************************
+//---------------------- tie_fighter prog-----------------------
+         program {
+            name,       "prog-tie_fighter1";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 50.0;
+            target,     "tie_fighter";
+            after,      "prog-tie_fighter2";
+         }
+         program {
+            name,       "prog-tie_fighter2";
+            signal,     "NONE";
+            source,     "NONE";
+            action,     STATE_SET "default" 0.0;
+          //  transition, LINEAR 50.0; pour un allé retour
+            target,     "tie_fighter";
+            after,      "prog-tie_fighter1";
+         }
+//--------------------- impérial prog---------------------
+         program {
+            name,       "prog-imperial1";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 200.0;
+            target,     "imperial";
+            after,      "prog-imperial2";
+         }
+         program {
+            name,       "prog-imperial2";
+            signal,     "NONE";
+            source,     "NONE";
+            action,     STATE_SET "default" 0.0;
+            // transition, LINEAR 50.0;
+            target,     "imperial";
+            after,      "prog-imperial1";
+         }
+// ----------------------Ship prog-----------------------------
+         program {
+            name,       "prog-ship1";
+            signal,     "show";
+            source,     "";
+            action,     STATE_SET "drift" 0.0;
+            transition, LINEAR 100.0;
+            target,     "ship";
+            after,      "prog-ship2";
+         }
+         program {
+            name,       "prog-ship2";
+            signal,     "NONE";
+            source,     "NONE";
+            action,     STATE_SET "default" 0.0;
+            // transition, LINEAR 50.0;
+            target,     "ship";
+            after,      "prog-ship1";
+         }
+	    }         
+       }
+     }
+   }
