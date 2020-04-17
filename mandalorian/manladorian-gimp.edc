@@ -1,0 +1,173 @@
+images {
+   image: "/home/guest/Images/manladorian/perso_malan.png" COMP;
+   image: "/home/guest/Images/manladorian/ship.png" COMP;
+   image: "/home/guest/Images/manladorian/imperial.png" COMP;
+   image: "/home/guest/Images/manladorian/tie_fighter.png" COMP;
+   image: "/home/guest/Images/manladorian/flare.png" COMP;
+   image: "/home/guest/Images/manladorian/yoda.png" COMP;
+   image: "/home/guest/Images/manladorian/background.png" COMP;
+
+}
+collections {
+   group {
+      name: "mandalorian.xcf";
+      min: 1920 1080;
+      max: 1920 1080;
+      parts {
+         part {
+            name: "background";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 1920 1080;
+               max: 1920 1080;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 0 0;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 1920 1080;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/background.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "yoda";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 772 939;
+               max: 772 939;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 1273 138;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 2045 1077;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/yoda.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "flare";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 325 328;
+               max: 325 328;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 1720 138;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 2045 466;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/flare.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "tie_fighter";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 86 68;
+               max: 86 68;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 334 403;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 420 471;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/tie_fighter.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "imperial";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 423 155;
+               max: 423 155;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 1164 205;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 1587 360;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/imperial.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "ship";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 274 142;
+               max: 274 142;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 79 576;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 353 718;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/ship.png";
+               }
+               visible: 1;
+            }
+         }
+         part {
+            name: "perso_malan";
+            type: IMAGE;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               min: 537 650;
+               max: 537 650;
+               rel1 {
+                  relative: 0.0 0.0;
+                  offset: 789 349;
+               }
+               rel2 {
+                  relative: 0.0 0.0;
+                  offset: 1326 999;
+               }
+               image {
+                  normal: "/home/guest/Images/manladorian/perso_malan.png";
+               }
+               visible: 1;
+            }
+         }
+      }
+   }
+}
